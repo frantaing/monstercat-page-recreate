@@ -1,4 +1,4 @@
-# Monogram shop recreation (Frontend Practice)
+# Monstercat album release page receration (Frontend Practice) 
 
 A responsive front-end recreation of [Monstercat's album release page](https://www.monstercat.com/release/MCLP017). This is a self-directed challenge from [Frontend Practice](https://www.frontendpractice.com/projects/monstercat).
 
