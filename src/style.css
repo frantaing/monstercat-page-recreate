@@ -19,6 +19,11 @@
     /* Typography */
     --font-heading: "Special Gothic Expanded One", sans-serif;          /* For headings (Album name, buttons, Stream/Track, etc) */
     --font-body: "Montserrat", sans-serif;                              /* For general body font */
+    /* Colors */
+    --color-accent: #679E85;                                            /* [Green] accent color for buttons */
+    --color-primary: #fdfdfd;                                           /* [White-ish] for text and icons */
+    --color-secondary: #383838;                                         /* [Grey] for News (?) */
+    --color-background: #000;                                           /* [Black] for background */
 }
 
 
@@ -34,6 +39,6 @@ body {
         overflow-x-hidden                                               /* Prevent horizontal scrolling */
         min-h-screen box-border                                         /* Full viewport height with proper box model */
         m-0 p-0                                                         /* Reset default margins and padding */
-        font-heading text-base leading-normal                           /* Apply custom font and typography */                                                 
-                                                                        /* Set main background color */
+        font-heading text-base leading-normal text-primary              /* Apply custom font and typography */                                                 
+        bg-background                                                   /* Set main background color */
 }
