@@ -1,0 +1,39 @@
+/* 
+======================
+# IMPORTS 
+======================
+*/
+
+/* Tailwind import */
+@import 'tailwindcss';
+/* Font import (Montserrat & Special Gothic Expanded One) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
+
+
+/* 
+======================
+# CSS CUSTOM PROPERTIES 
+======================
+*/
+@theme {
+    /* Typography */
+    --font-heading: "Special Gothic Expanded One", sans-serif;          /* For headings (Album name, buttons, Stream/Track, etc) */
+    --font-body: "Montserrat", sans-serif;                              /* For general body font */
+}
+
+
+/* 
+======================
+# SHARED CLASSES
+======================
+*/
+
+/* Base */
+body {
+    @apply
+        overflow-x-hidden                                               /* Prevent horizontal scrolling */
+        min-h-screen box-border                                         /* Full viewport height with proper box model */
+        m-0 p-0                                                         /* Reset default margins and padding */
+        font-heading text-base leading-normal                           /* Apply custom font and typography */                                                 
+                                                                        /* Set main background color */
+}
