@@ -46,13 +46,31 @@ The goal is to recerate the structure, appearance, and behavior of **Monstercat'
 This is a **WIP**! 🤫
 
 #### Page structure (HTML) 🏗️
-- ...
+- [ ] Navigations?
+  - [ ] Topbar navigation?
+  - [ ] Sidebar navigation?
+- [ ] Header/Hero/Album?
+- [ ] Streaming?
+- [ ] Track List?
+- [ ] Music Video?
+- [ ] Footer?
 
 #### Styling (Tailwind) 🎨
-- ...
+- [ ] Navigations?
+  - [ ] Topbar navigation?
+    - [ ] Blurry topbar background?
+  - [ ] Sidebar navigation?
+- [ ] Header/Hero/Album?
+- [ ] Streaming?
+  - [ ] Tooltips?
+- [ ] Track List?
+- [ ] Music Video?
+- [ ] Footer?
+- [ ] Background image?
 
 #### Javascript 🌚
-- ...
+- [ ] Sidebar navigation?
+- [ ] Working music player?
 
 #### Final stuff ✨
 - [ ] Final code cleanup and commenting
