@@ -89,16 +89,16 @@ Music provided by NoCopyrightSounds. [Full NCS Usage Policy](https://ncs.io/usag
 
 | Track Name | Original NCS Track | Artist | Attribution Link |
 | :--- | :--- | :--- | :--- |
-| The Ascent | Cartoon - On & On (feat. Daniel Levi) | Cartoon, Jéja | [Watch / Stream](https://ncs.io/OnAndOn) |
-| Neon Drift | Alan Walker - Spectre | Alan Walker | [Watch / Stream](https://ncs.io/spectre) |
-| Static Pulse | Elektronomia - Sky High | Elektronomia | [Watch / Stream](https://ncs.io/SkyHigh) |
-| Ghost in the Machine | Lost Sky - Fearless pt.II (feat. Chris Linton) | Lost Sky | [Watch / Stream](https://ncs.io/Fearless2) |
-| Apex Protocol | Different Heaven & EH!DE - My Heart | Different Heaven, EH!DE | [Watch / Stream](https://ncs.io/MyHeart) |
-| Digital Horizon | Syn Cole - Feel Good | Syn Cole | [Watch / Stream](https://ncs.io/FeelGood) |
-| Transcendence | Tobu - Hope | Tobu | [Watch / Stream](https://ncs.io/hope) |
-| Core Dump | Jim Yosef - Link | Jim Yosef | [Watch / Stream](https://ncs.io/Link) |
-| Aurora Trail | Sub Urban - Cradles | Sub Urban | [Watch / Stream](https://ncs.io/Cradles) |
-| Protocol Complete | Janji - Heroes Tonight (feat. Johnning) | Janji | [Watch / Stream](https://ncs.io/HeroesTonight) |
+| The Ascent | On & On (feat. Daniel Levi) | Cartoon, Jéja | [Watch / Stream](https://ncs.io/OnAndOn) |
+| Neon Drift | Royalty |  Maestro Chives, Egzod, Neoni  | [Watch / Stream](https://ncs.io/Royalty) |
+| Static Pulse | Sky High | Elektronomia | [Watch / Stream](https://ncs.io/SkyHigh) |
+| Ghost in the Machine | Fearless pt.II (feat. Chris Linton) | Lost Sky | [Watch / Stream](https://ncs.io/Fearless2) |
+| Apex Protocol | My Heart | Different Heaven, EH!DE | [Watch / Stream](https://ncs.io/MyHeart) |
+| Digital Horizon | Feel Good | Syn Cole | [Watch / Stream](https://ncs.io/FeelGood) |
+| Transcendence | Hope | Tobu | [Watch / Stream](https://ncs.io/hope) |
+| Core Dump | Link | Jim Yosef | [Watch / Stream](https://ncs.io/Link) |
+| Aurora Trail | Cradles | Sub Urban | [Watch / Stream](https://ncs.io/Cradles) |
+| Protocol Complete | Montagem Toma  |  X972, sk3tch01, MXZI  | [Watch / Stream](https://ncs.io/MontagemToma) |
 
 <br>
 
