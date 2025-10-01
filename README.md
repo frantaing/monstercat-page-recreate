@@ -38,8 +38,9 @@ The goal is to recerate the structure, appearance, and behavior of **Monstercat'
 - This specific [Monstercat album release page](https://www.monstercat.com/release/MCLP017)
 - For images: [Unsplash](https://unsplash.com/)
 - For icons: [Boxicons](https://boxicons.com/) and [Flaticon](https://www.flaticon.com/)
+- For Placeholder Music: NoCopyrightSounds (NCS). Full track-by-track credits are listed in the [Music Attribution and Licensing](#🎵-music-attribution-and-licensing) section below.
 
-<br>
+---
 
 ## ⏳ Status
 
@@ -79,10 +80,33 @@ This is a **WIP**! 🤫
 
 <br>
 
+<a id="🎵-music-attribution-and-licensing"></a>
+## 🎵 Music Attribution and Licensing
+
+The music used in this frontend recreation is for demonstration and portfolio purposes only and is sourced from NoCopyrightSounds (NCS) under their Usage Policy for independent content creators.
+
+Music provided by NoCopyrightSounds. [Full NCS Usage Policy](https://ncs.io/usage-policy)
+
+| Track Name | Original NCS Track | Artist | Attribution Link |
+| :--- | :--- | :--- | :--- |
+| The Ascent | Cartoon - On & On (feat. Daniel Levi) | Cartoon, Jéja | [Watch / Stream](https://ncs.io/OnAndOn) |
+| Neon Drift | Alan Walker - Spectre | Alan Walker | [Watch / Stream](https://ncs.io/spectre) |
+| Static Pulse | Elektronomia - Sky High | Elektronomia | [Watch / Stream](https://ncs.io/SkyHigh) |
+| Ghost in the Machine | Lost Sky - Fearless pt.II (feat. Chris Linton) | Lost Sky | [Watch / Stream](https://ncs.io/Fearless2) |
+| Apex Protocol | Different Heaven & EH!DE - My Heart | Different Heaven, EH!DE | [Watch / Stream](https://ncs.io/MyHeart) |
+| Digital Horizon | Syn Cole - Feel Good | Syn Cole | [Watch / Stream](https://ncs.io/FeelGood) |
+| Transcendence | Tobu - Hope | Tobu | [Watch / Stream](https://ncs.io/hope) |
+| Core Dump | Jim Yosef - Link | Jim Yosef | [Watch / Stream](https://ncs.io/Link) |
+| Aurora Trail | Sub Urban - Cradles | Sub Urban | [Watch / Stream](https://ncs.io/Cradles) |
+| Protocol Complete | Janji - Heroes Tonight (feat. Johnning) | Janji | [Watch / Stream](https://ncs.io/HeroesTonight) |
+
+<br>
+
 ## 📝 Disclaimer
 
 This is a personal, non-commercial project created for educational and recreational purposes only.  
 All text content, links, and branding elements in this project are copied from the Monstercat website album release for practice purposes.  
 All images, icons, and other media are sourced from free-to-use platforms (e.g., Unsplash, Boxicons) or replaced with placeholders.  
+Placeholder music and video embeds are sourced from NoCopyrightSounds (NCS) and are fully credited in the 'Music Attribution and Licensing' section above to comply with their usage policy.
 This project is not affiliated with, endorsed, sponsored, or specifically approved by Monstercat.  
 All original code in this repository is licensed under the [MIT License](LICENSE).
