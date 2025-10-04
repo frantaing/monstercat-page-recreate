@@ -43,25 +43,16 @@ body {
 }
 
 /* Images & Icons */
-.logo {
-    @apply
-        w-12 p-1.5
-        bg-background
-}
-.social-icon {
+.topnav-social-icon { /* Social icons for the mobile top bar navigation */
     @apply
         w-4.5
 }
-.menu-icon {
-    @apply
-        w-9
-}
 
-/* Top navigation */
-.topnav {
+/* Navigation */
+.topnav { /* Mobile top bar navigation */
     @apply
         fixed
         flex justify-between items-center
         w-full pl-4.5 pr-3 py-2.5
-        bg-background/35 backdrop-blur-sm
+        bg-background/40 backdrop-blur-sm
 }
