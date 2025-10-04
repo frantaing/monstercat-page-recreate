@@ -36,9 +36,32 @@
 /* Base */
 body {
     @apply
-        overflow-x-hidden                                               /* Prevent horizontal scrolling */
-        min-h-screen box-border                                         /* Full viewport height with proper box model */
-        m-0 p-0                                                         /* Reset default margins and padding */
-        font-heading text-base leading-normal text-primary              /* Apply custom font and typography */                                                 
-        bg-background                                                   /* Set main background color */
+        overflow-x-hidden
+        min-h-screen box-border
+        m-0 p-0
+        font-heading text-base leading-normal text-primary
+}
+
+/* Images & Icons */
+.logo {
+    @apply
+        w-12 p-1.5
+        bg-background
+}
+.social-icon {
+    @apply
+        w-4.5
+}
+.menu-icon {
+    @apply
+        w-9
+}
+
+/* Top navigation */
+.topnav {
+    @apply
+        fixed
+        flex justify-between items-center
+        w-full pl-4.5 pr-3 py-2.5
+        bg-background/35 backdrop-blur-sm
 }

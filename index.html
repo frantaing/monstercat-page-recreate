@@ -8,27 +8,27 @@
   <body>
 
     <!-- Top navbar  -->
-    <nav>
+    <nav class="topnav">
 
       <!-- Logo -->
-      <a href=""><img src="cat.png" alt="Website logo"></a>
+      <a href=""><img class="logo" src="cat.png" alt="Website logo"></a>
 
       <!-- Socials (top) -->
-      <div class="">
-        <a href=""><img src="assets/icons/instagram.png" alt="Instagram"></a>
-        <a href=""><img src="assets/icons/tik-tok.png" alt="Tiktok"></a>
-        <a href=""><img src="assets/icons/twitter.png" alt="Twitter"></a>
-        <a href=""><img src="assets/icons/twitch.png" alt="Twitch"></a>
-        <a href=""><img src="assets/icons/facebook.png" alt="Facebook"></a>
-        <a href=""><img src="assets/icons/discord.png" alt="Discord"></a>
-        <a href=""><img src="assets/icons/play-button.png" alt="Monstercat Player"></a>
+      <div class="flex gap-5.5">
+        <a href=""><img class="social-icon" src="assets/icons/instagram.png" alt="Instagram"></a>
+        <a href=""><img class="social-icon" src="assets/icons/tik-tok.png" alt="Tiktok"></a>
+        <a href=""><img class="social-icon" src="assets/icons/twitter.png" alt="Twitter"></a>
+        <a href=""><img class="social-icon" src="assets/icons/twitch.png" alt="Twitch"></a>
+        <a href=""><img class="social-icon" src="assets/icons/facebook.png" alt="Facebook"></a>
+        <a href=""><img class="social-icon" src="assets/icons/discord.png" alt="Discord"></a>
+        <a href=""><img class="social-icon" src="assets/icons/play-button.png" alt="Monstercat Player"></a>
       </div>
 
       <!-- hamburger menu -->
-      <button><img src="assets/icons/menu.png" alt="Open sidemenu button"></button>
+      <button><img class="menu-icon" src="assets/icons/menu.png" alt="Open sidemenu button"></button>
 
       <!-- Socials (side) -->
-      <div class="">
+      <div class="hidden">
         <a href=""><img src="assets/icons/instagram.png" alt="Instagram"></a>
         <a href=""><img src="assets/icons/tik-tok.png" alt="Tiktok"></a>
         <a href=""><img src="assets/icons/twitter.png" alt="Twitter"></a>
@@ -41,7 +41,7 @@
     </nav>
 
     <!-- Sidenav -->
-    <nav>
+    <nav class="hidden">
 
       <!-- Logo/Title + close button-->
       <div class="">
@@ -90,8 +90,10 @@
 
     </nav>
 
+    <div><img src="trophim-laptev-eeAxyRvgWzY-unsplash.jpg" alt=""></div>
+
     <!-- Album image, title, etc -->
-    <header>
+    <header  class="">
 
       <!-- Album image -->
       <img src="trophim-laptev-eeAxyRvgWzY-unsplash.jpg" alt="Album cover">
@@ -131,7 +133,7 @@
     </header>
 
     <!-- Stream it... -->
-    <section>
+    <section  class="hidden">
       <h1>STREAM IT YOUR WAY</h1>
 
       <!-- Platform icons -->
@@ -149,7 +151,7 @@
     </section>
 
     <!-- Track list -->
-    <section>
+    <section  class="hidden">
       <h1>TRACK LIST</h1>
 
       <!-- List of tracks -->
@@ -320,13 +322,13 @@
     </section>
 
     <!-- Music video -->
-    <section>
+    <section  class="hidden">
       <h1>MUSIC VIDEO</h1>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/K4DyBUG242c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>    
-  </section>
+    </section>
 
     <!-- Footer -->
-    <footer>
+    <footer  class="hidden">
 
       <!-- Links + Newsletter -->
       <section>
