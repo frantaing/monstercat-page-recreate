@@ -46,19 +46,21 @@ body {
         m-0 p-0
         font-heading text-base leading-normal text-primary
 }
-.main-wrapper {
+
+/* Wrappers */
+.main-wrapper { /* For whole site */
     @apply
         flex flex-col
         w-full
 
 }
-.topnav-wrapper {
+.topnav-wrapper { /* For topbar navigation */
     @apply
         flex justify-center
 }
 
 /* Images & Icons */
-.topnav-logo {
+.topnav-logo { /* Logo for topbar */
     @apply
         w-9 p-1.5 
         bg-background 
