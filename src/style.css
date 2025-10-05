@@ -58,6 +58,13 @@ body {
 }
 
 /* Images & Icons */
+.topnav-logo {
+    @apply
+        w-9 p-1.5 
+        bg-background 
+        
+        sm:w-12 sm:p-1.5
+}
 .topnav-social-icon { /* Social icons for the mobile top bar navigation */
     @apply
         w-4.5
@@ -71,13 +78,8 @@ body {
         w-full pl-3.5 pr-3 py-2
         bg-background/40 backdrop-blur-sm
 
-        border-2 border-red-500
-
         sm:pl-4.5 sm:py-2.5
-
-        lg:bg-background/0
-        lg:max-w-[78rem]
-        lg:pl-8 lg:pr-7 lg:py-6.5
+        lg:max-w-[78rem] lg:bg-background/0 lg:pl-8 lg:pr-7 lg:py-6.5
         xl:max-w-[91rem]
         2xl:max-w-[116rem]
 }
