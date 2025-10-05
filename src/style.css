@@ -67,7 +67,20 @@ body {
         
         sm:w-12 sm:p-1.5
 }
+.sidenav-logo { /* Logo for sidenav */
+    @apply
+        w-9 p-1.5 
+        bg-background
+}
 .topnav-social-icon { /* Social icons for the mobile top bar navigation */
+    @apply
+        w-4.5
+}
+.sidenav-social-icon { /* Social icons for the side menu navigation */
+    @apply
+        w-4.5
+}
+.close-icon {
     @apply
         w-4.5
 }
@@ -84,4 +97,11 @@ body {
         lg:max-w-[78rem] lg:bg-background/0 lg:pl-8 lg:pr-7 lg:py-6.5
         xl:max-w-[91rem]
         2xl:max-w-[116rem]
+}
+.sidenav { /* Hidden side menu */
+    @apply
+        fixed z-50
+        flex flex-col justify-between self-end
+        w-[26rem] h-full p-8
+        bg-background
 }

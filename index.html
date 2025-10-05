@@ -51,51 +51,60 @@
 
 
       <!-- Sidenav -->
-      <nav class="hidden">
+      <nav class="sidenav">
 
-        <!-- Logo/Title + close button-->
-        <div class="">
-          <!-- Logo -->
-          <a class="">
-            <img src="cat.png" alt="Website logo">
-            <span>monstercat</span>
-          </a>
-          <!-- Close button -->
-          <button><img src="assets/icons/x.png" alt="Close sidemenu button"></button>
+        <!-- Sidenav top -->
+        <div class="flex flex-col gap-14">
+
+          <!-- Logo/Title + close button-->
+          <div class="flex justify-between items-center w-full border-2 border-red-500">
+            <!-- Logo -->
+            <a class="flex items-center">
+              <img class="sidenav-logo" src="cat.png" alt="Website logo">
+              <span>monstercat</span>
+            </a>
+            <!-- Close button -->
+            <button><img class="close-icon" src="assets/icons/x.png" alt="Close sidemenu button"></button>
+          </div>
+
+          <!-- Nav links -->
+          <div class="flex flex-col">
+            <a href="">MUSIC</a>
+            <a href="">ARTISTS</a>
+            <a href="">ABOUT</a>
+            <a href="">NEWS</a>
+            <a href="">EVENTS</a>
+            <a href="">PROGRAMMING</a>
+            <a href="">GOLD</a>
+            <a href="">PARTNERS</a>
+            <a href="">PRESS</a>
+            <a href="">PLAYER</a>
+            <a href="">SHOP</a>
+            <a href="">LOST CIVILIZATION</a>
+          </div>
+
         </div>
 
+        <!-- Sidenav bottom -->
+        <div class="flex flex-col gap-6">
 
-        <!-- Nav links -->
-        <div class="">
-          <a href="">MUSIC</a>
-          <a href="">ARTISTS</a>
-          <a href="">ABOUT</a>
-          <a href="">NEWS</a>
-          <a href="">EVENTS</a>
-          <a href="">PROGRAMMING</a>
-          <a href="">GOLD</a>
-          <a href="">PARTNERS</a>
-          <a href="">PRESS</a>
-          <a href="">PLAYER</a>
-          <a href="">SHOP</a>
-          <a href="">LOST CIVILIZATION</a>
-        </div>
+          <!-- Socials -->
+          <div class="flex">
+            <a href=""><img class="sidenav-social-icon" src="assets/icons/instagram.png" alt="Instagram"></a>
+            <a href=""><img class="sidenav-social-icon" src="assets/icons/tik-tok.png" alt="Tiktok"></a>
+            <a href=""><img class="sidenav-social-icon" src="assets/icons/twitter.png" alt="Twitter"></a>
+            <a href=""><img class="sidenav-social-icon" src="assets/icons/twitch.png" alt="Twitch"></a>
+            <a href=""><img class="sidenav-social-icon" src="assets/icons/facebook.png" alt="Facebook"></a>
+            <a href=""><img class="sidenav-social-icon" src="assets/icons/discord.png" alt="Discord"></a>
+            <a href=""><img class="sidenav-social-icon" src="assets/icons/play-button.png" alt="Monstercat Player"></a>
+          </div>
 
-        <!-- Socials -->
-        <div class="">
-          <a href=""><img src="assets/icons/instagram.png" alt="Instagram"></a>
-          <a href=""><img src="assets/icons/tik-tok.png" alt="Tiktok"></a>
-          <a href=""><img src="assets/icons/twitter.png" alt="Twitter"></a>
-          <a href=""><img src="assets/icons/twitch.png" alt="Twitch"></a>
-          <a href=""><img src="assets/icons/facebook.png" alt="Facebook"></a>
-          <a href=""><img src="assets/icons/discord.png" alt="Discord"></a>
-          <a href=""><img src="assets/icons/play-button.png" alt="Monstercat Player"></a>
-        </div>
+          <!-- Sign in/up -->
+          <div class="">
+            <a href="">SIGN IN</a>
+            <a href="">SIGN UP</a>
+          </div>
 
-        <!-- Sign in/up -->
-        <div class="">
-          <a href="">SIGN IN</a>
-          <a href="">SIGN UP</a>
         </div>
 
       </nav>
