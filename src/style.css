@@ -44,7 +44,7 @@ body {
         overflow-x-hidden
         min-h-screen box-border
         m-0 p-0
-        font-heading text-base leading-normal text-primary
+        font-heading text-base tracking-wider leading-normal text-primary
 }
 
 /* Wrappers */
