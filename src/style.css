@@ -80,6 +80,17 @@ body {
         w-9
 }
 
+/* Links */
+.nav-link { /* Navigation link */
+    @apply
+        flex items-center gap-2.5
+        text-[17px]
+}
+.nav-link img { /* Nav-link sub-menu arrow */
+    @apply
+        w-4.5
+}
+
 /* Navigation */
 .topnav { /* Mobile top bar navigation */
     @apply
