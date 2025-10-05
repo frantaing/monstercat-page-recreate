@@ -57,10 +57,10 @@ This is a **WIP**! 🤫
 - [x] Footer?
 
 #### Styling (Tailwind) 🎨
-- [ ] Navigations?
-  - [ ] Topbar navigation?
-    - [ ] Blurry topbar background?
-  - [ ] Sidebar navigation?
+- [x] Navigations?
+  - [x] Topbar navigation?
+    - [x] Blurry topbar background?
+  - [x] Sidebar navigation?
 - [ ] Header/Hero/Album?
 - [ ] Streaming?
   - [ ] Tooltips?
