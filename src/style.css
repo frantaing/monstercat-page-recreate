@@ -69,20 +69,15 @@ body {
 }
 .sidenav-logo { /* Logo for sidenav */
     @apply
-        w-9 p-1.5 
-        bg-background
+        w-11
 }
-.topnav-social-icon { /* Social icons for the mobile top bar navigation */
-    @apply
-        w-4.5
-}
-.sidenav-social-icon { /* Social icons for the side menu navigation */
+.nav-social-icon { /* Social icons for navigation */
     @apply
         w-4.5
 }
 .close-icon {
     @apply
-        w-4.5
+        w-9
 }
 
 /* Navigation */
@@ -102,6 +97,6 @@ body {
     @apply
         fixed z-50
         flex flex-col justify-between self-end
-        w-[26rem] h-full p-8
+        w-[26rem] h-full pl-5 pr-8 py-7.5
         bg-background
 }
