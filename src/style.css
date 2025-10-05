@@ -23,7 +23,12 @@
     --color-accent: #679E85;                                            /* [Green] accent color for buttons */
     --color-primary: #fdfdfd;                                           /* [White-ish] for text and icons */
     --color-secondary: #383838;                                         /* [Grey] for News (?) */
-    --color-background: #000;                                           /* [Black] for background */
+    --color-background: #000;                                        /* [Black] for background */
+
+    --breakpoint-sm: 33rem;
+    --breakpoint-lg: 74rem;
+    --breakpoint-xl: 90rem;
+    --breakpoint-2xl: 120rem;
 }
 
 
@@ -41,6 +46,16 @@ body {
         m-0 p-0
         font-heading text-base leading-normal text-primary
 }
+.main-wrapper {
+    @apply
+        flex flex-col
+        w-full
+
+}
+.topnav-wrapper {
+    @apply
+        flex justify-center
+}
 
 /* Images & Icons */
 .topnav-social-icon { /* Social icons for the mobile top bar navigation */
@@ -52,7 +67,15 @@ body {
 .topnav { /* Mobile top bar navigation */
     @apply
         fixed
-        flex justify-between items-center
+        flex flex-col gap-11.5
         w-full pl-4.5 pr-3 py-2.5
         bg-background/40 backdrop-blur-sm
+
+        border-2 border-red-500
+
+        lg:bg-background/0
+        lg:max-w-[78rem]
+        lg:pl-8 lg:pr-7 lg:py-6.5
+        xl:border-pink-50
+        2xl:border-blue-500
 }
