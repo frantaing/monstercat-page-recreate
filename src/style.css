@@ -45,11 +45,13 @@ body {
         min-h-screen box-border
         m-0 p-0
         font-heading text-base tracking-wider leading-normal text-primary
+        bg-background
 }
 
 /* Wrappers */
 .main-wrapper { /* For whole site */
     @apply
+        relative z-10
         flex flex-col
         w-full
 
@@ -75,9 +77,16 @@ body {
     @apply
         w-4.5
 }
-.close-icon {
+.close-icon { /* Sidemenu close button icon */
     @apply
         w-9
+}
+.background-img {
+    @apply
+        absolute top-0 left-0 right-0
+        h-screen
+        bg-cover bg-center bg-no-repeat
+        bg-[linear-gradient(to_bottom,transparent_70%,theme(colors.background)),url(/public/trophim-laptev-eeAxyRvgWzY-unsplash.jpg)]
 }
 
 /* Links */
@@ -94,7 +103,7 @@ body {
 /* Navigation */
 .topnav { /* Mobile top bar navigation */
     @apply
-        fixed
+        fixed z-50
         flex flex-col gap-11.5
         w-full pl-3.5 pr-3 py-2
         bg-background/40 backdrop-blur-sm
@@ -106,7 +115,7 @@ body {
 }
 .sidenav { /* Hidden side menu */
     @apply
-        fixed z-50
+        fixed z-99
         flex flex-col justify-between self-end
         w-[26rem] h-full pl-5 pr-8 py-7.5
         bg-background
