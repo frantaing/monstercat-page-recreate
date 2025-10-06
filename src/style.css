@@ -23,7 +23,7 @@
     --color-accent: #679E85;                                            /* [Green] accent color for buttons */
     --color-primary: #fdfdfd;                                           /* [White-ish] for text and icons */
     --color-secondary: #383838;                                         /* [Grey] for News (?) */
-    --color-background: #000;                                        /* [Black] for background */
+    --color-background: #000;                                           /* [Black] for background */
 
     --breakpoint-sm: 33rem;
     --breakpoint-md: 48rem;
@@ -93,7 +93,7 @@ body {
         bg-[linear-gradient(to_bottom,transparent_50%,theme(colors.background)),url(/salvatore-andrea-santacroce-Nc0xNgW3G-k-unsplash.jpg)]
 }
 
-/* Links */
+/* Links and buttons */
 .nav-link { /* Navigation link */
     @apply
         flex items-center gap-2.5
@@ -102,6 +102,14 @@ body {
 .nav-link img { /* Nav-link sub-menu arrow */
     @apply
         w-4.5
+}
+.button {
+    @apply
+        pr-7 pl-6 py-3.5
+        text-xs
+        border-2 
+        transition
+        hover:text-background hover:bg-primary
 }
 
 /* Navigation */
