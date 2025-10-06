@@ -57,7 +57,7 @@ body {
         flex flex-col items-center
         w-full mt-28 px-4
 
-
+        md:mt-48
 }
 .topnav-wrapper { /* For topbar navigation */
     @apply
@@ -113,7 +113,7 @@ body {
         bg-background/40 backdrop-blur-sm
 
         sm:pl-4.5 sm:py-2.5
-        lg:max-w-[78rem] lg:bg-background/0 lg:pl-8 lg:pr-7 lg:py-6.5
+        lg:max-w-[78rem] lg:bg-background/0 lg:pl-8 lg:pr-7 lg:py-6.5 lg:backdrop-blur-none
         xl:max-w-[91rem]
         2xl:max-w-[116rem]
 }
