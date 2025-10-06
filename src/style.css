@@ -84,10 +84,10 @@ body {
 .background-img {
     @apply
         absolute top-0 left-0 right-0
-        h-screen
+        h-[110vh]
         bg-cover bg-center bg-no-repeat
-        blur opacity-50 scale-x-105
-        bg-[linear-gradient(to_bottom,transparent_90%,theme(colors.background)),url(/public/trophim-laptev-eeAxyRvgWzY-unsplash.jpg)]
+        blur opacity-60 scale-x-105
+        bg-[linear-gradient(to_bottom,transparent_50%,theme(colors.background)),url(/salvatore-andrea-santacroce-Nc0xNgW3G-k-unsplash.jpg)]
 }
 
 /* Links */
