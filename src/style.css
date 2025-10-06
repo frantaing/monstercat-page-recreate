@@ -53,10 +53,10 @@ body {
 /* Wrappers */
 .main-wrapper { /* For whole site */
     @apply
-        relative z-10
+        relative z-10 overflow-x-hidden
         flex flex-col items-center
-        w-full mt-28 px-4
-
+        w-full mt-28 px-3.5
+        border-2 border-yellow-500
         md:mt-48
 }
 .topnav-wrapper { /* For topbar navigation */
@@ -105,7 +105,7 @@ body {
 }
 .button {
     @apply
-        pr-7 pl-6 py-3.5
+        pr-7 pl-5 py-2.5
         text-xs
         border-2 
         transition
