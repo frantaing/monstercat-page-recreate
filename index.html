@@ -119,37 +119,37 @@
     <div class="main-wrapper">
 
       <!-- Album image, title, etc -->
-      <header  class="">
+      <header  class="flex flex-col items-start gap-2 border-2 border-red-500">
 
         <!-- Album image -->
-        <img class="w-80" src="salvatore-andrea-santacroce-Nc0xNgW3G-k-unsplash.jpg" alt="Album cover">
+        <img class="w-lg" src="salvatore-andrea-santacroce-Nc0xNgW3G-k-unsplash.jpg" alt="Album cover">
 
         <!-- Album/Collection(?) name + Date released -->
-        <span class="">Uncaged EP — Released October 20, 2025</span>
+        <span class="mt-8 mb-5 font-body italic text-sm"><span class="font-semibold text-accent">Uncaged EP</span> — Released October 20, 2025</span>
 
         <!-- Album title(?) + Artist -->
-        <div class="">
-          <h1>APEX PROTOCOL</h1>
-          <h2>AURORA BOREALIS</h2>
+        <div class="flex flex-col gap-2">
+          <h1 class="text-2xl">APEX PROTOCOL</h1>
+          <h2 class="">AURORA BOREALIS</h2>
         </div>
 
         <!-- Listen + Share buttons -->
-        <div class="">
+        <div class="flex gap-5 mt-4">
           <!-- Listen -->
-          <button>
+          <button class="flex">
             <div class="group">
-              <img src="assets/icons/play.png" alt="Play album button">
-              <img src="assets/icons/play-black.png" alt="Play album button hover">
+              <img class="w-5 group-hover:hidden" src="assets/icons/play.png" alt="Play album button">
+              <img class="w-5 hidden group-hover:block" src="assets/icons/play-black.png" alt="Play album button hover">
             </div>
 
             <span>LISTEN NOW</span>
           </button>
 
           <!-- Share -->
-          <button>
+          <button class="flex">
             <div class="group">
-              <img src="assets/icons/share.png" alt="Share album button">
-              <img src="assets/icons/share-black.png" alt="Share album button hover">
+              <img class="w-5 group-hover:hidden" src="assets/icons/share.png" alt="Share album button">
+              <img class="w-5 hidden group-hover:block" src="assets/icons/share-black.png" alt="Share album button hover">
             </div>
 
             <span>SHARE</span>
