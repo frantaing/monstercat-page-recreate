@@ -23,7 +23,12 @@
     --color-accent: #679E85;                                            /* [Green] accent color for buttons */
     --color-primary: #fdfdfd;                                           /* [White-ish] for text and icons */
     --color-secondary: #383838;                                         /* [Grey] for News (?) */
-    --color-background: #000;                                           /* [Black] for background */
+    --color-background: #000;                                        /* [Black] for background */
+
+    --breakpoint-sm: 33rem;
+    --breakpoint-lg: 74rem;
+    --breakpoint-xl: 90rem;
+    --breakpoint-2xl: 120rem;
 }
 
 
@@ -36,9 +41,73 @@
 /* Base */
 body {
     @apply
-        overflow-x-hidden                                               /* Prevent horizontal scrolling */
-        min-h-screen box-border                                         /* Full viewport height with proper box model */
-        m-0 p-0                                                         /* Reset default margins and padding */
-        font-heading text-base leading-normal text-primary              /* Apply custom font and typography */                                                 
-        bg-background                                                   /* Set main background color */
+        overflow-x-hidden
+        min-h-screen box-border
+        m-0 p-0
+        font-heading text-base tracking-wider leading-normal text-primary
+}
+
+/* Wrappers */
+.main-wrapper { /* For whole site */
+    @apply
+        flex flex-col
+        w-full
+
+}
+.topnav-wrapper { /* For topbar navigation */
+    @apply
+        flex justify-center
+}
+
+/* Images & Icons */
+.topnav-logo { /* Logo for topbar */
+    @apply
+        w-9 p-1.5 
+        bg-background 
+        
+        sm:w-12 sm:p-1.5
+}
+.sidenav-logo { /* Logo for sidenav */
+    @apply
+        w-11
+}
+.nav-social-icon { /* Social icons for navigation */
+    @apply
+        w-4.5
+}
+.close-icon {
+    @apply
+        w-9
+}
+
+/* Links */
+.nav-link { /* Navigation link */
+    @apply
+        flex items-center gap-2.5
+        text-[17px]
+}
+.nav-link img { /* Nav-link sub-menu arrow */
+    @apply
+        w-4.5
+}
+
+/* Navigation */
+.topnav { /* Mobile top bar navigation */
+    @apply
+        fixed
+        flex flex-col gap-11.5
+        w-full pl-3.5 pr-3 py-2
+        bg-background/40 backdrop-blur-sm
+
+        sm:pl-4.5 sm:py-2.5
+        lg:max-w-[78rem] lg:bg-background/0 lg:pl-8 lg:pr-7 lg:py-6.5
+        xl:max-w-[91rem]
+        2xl:max-w-[116rem]
+}
+.sidenav { /* Hidden side menu */
+    @apply
+        fixed z-50
+        flex flex-col justify-between self-end
+        w-[26rem] h-full pl-5 pr-8 py-7.5
+        bg-background
 }
