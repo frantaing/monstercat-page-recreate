@@ -7,21 +7,40 @@
   </head>
   <body>
 
-    <div class="main-wrapper">
+    <!-- Album cover background image -->
+    <div class="background-img"></div>
+    
+    <!-- Navigation wrapper -->
+    <div>
 
-      <!-- Topnav -->
-      <div class="topnav-wrapper">
+        <!-- Topnav -->
+        <div class="topnav-wrapper">
 
-        <!-- Top navbar  -->
-        <nav class="topnav">
+          <!-- Top navbar  -->
+          <nav class="topnav">
 
-          <!-- Mobile topbar -->
-          <div class="flex justify-between items-center">
-            <!-- Logo -->
-            <a href=""><img class="topnav-logo" src="cat.png" alt="Website logo"></a>
+            <!-- Mobile topbar -->
+            <div class="flex justify-between items-center">
+              <!-- Logo -->
+              <a href=""><img class="topnav-logo" src="cat.png" alt="Website logo"></a>
 
-            <!-- Socials (top) -->
-            <div class="hidden gap-5.5 sm:flex lg:hidden">
+              <!-- Socials (top) -->
+              <div class="hidden gap-5.5 sm:flex lg:hidden">
+                <a href=""><img class="nav-social-icon" src="assets/icons/instagram.png" alt="Instagram"></a>
+                <a href=""><img class="nav-social-icon" src="assets/icons/tik-tok.png" alt="Tiktok"></a>
+                <a href=""><img class="nav-social-icon" src="assets/icons/twitter.png" alt="Twitter"></a>
+                <a href=""><img class="nav-social-icon" src="assets/icons/twitch.png" alt="Twitch"></a>
+                <a href=""><img class="nav-social-icon" src="assets/icons/facebook.png" alt="Facebook"></a>
+                <a href=""><img class="nav-social-icon" src="assets/icons/discord.png" alt="Discord"></a>
+                <a href=""><img class="nav-social-icon" src="assets/icons/play-button.png" alt="Monstercat Player"></a>
+              </div>
+
+              <!-- hamburger menu -->
+              <button><img class="w-9" src="assets/icons/menu.png" alt="Open sidemenu button"></button>
+            </div>
+
+            <!-- Socials (side) -->
+            <div class="hidden flex-col items-end gap-5.5 pr-2 lg:flex">
               <a href=""><img class="nav-social-icon" src="assets/icons/instagram.png" alt="Instagram"></a>
               <a href=""><img class="nav-social-icon" src="assets/icons/tik-tok.png" alt="Tiktok"></a>
               <a href=""><img class="nav-social-icon" src="assets/icons/twitter.png" alt="Twitter"></a>
@@ -31,91 +50,79 @@
               <a href=""><img class="nav-social-icon" src="assets/icons/play-button.png" alt="Monstercat Player"></a>
             </div>
 
-            <!-- hamburger menu -->
-            <button><img class="w-9" src="assets/icons/menu.png" alt="Open sidemenu button"></button>
+          </nav>
+
+        </div>
+
+        <!-- Sidenav -->
+        <nav class="sidenav hidden!">
+
+          <!-- Sidenav top -->
+          <div class="flex flex-col gap-16">
+
+            <!-- Logo/Title + close button-->
+            <div class="flex justify-between items-center">
+              <!-- Logo -->
+              <a href="" class="flex items-center gap-0.5">
+                <img class="sidenav-logo" src="cat.png" alt="Website logo">
+                <span class="font-body font-bold tracking-normal text-2xl">monstercat</span>
+              </a>
+              <!-- Close button -->
+              <button><img class="close-icon" src="assets/icons/x.png" alt="Close sidemenu button"></button>
+            </div>
+
+            <!-- Nav links -->
+            <div class="flex flex-col gap-5 ml-2">
+              <a class="nav-link" href="">MUSIC <img src="assets/icons/chevron-right.png" alt=""></a>
+              <a class="nav-link" href="">ARTISTS</a>
+              <a class="nav-link" href="">ABOUT <img src="assets/icons/chevron-right.png" alt=""></a>
+              <a class="nav-link" href="">NEWS</a>
+              <a class="nav-link" href="">EVENTS <img src="assets/icons/chevron-right.png" alt=""></a>
+              <a class="nav-link" href="">PROGRAMMING <img src="assets/icons/chevron-right.png" alt=""></a>
+              <a class="nav-link" href="">GOLD</a>
+              <a class="nav-link" href="">PARTNERS</a>
+              <a class="nav-link" href="">PRESS</a>
+              <a class="nav-link" href="">PLAYER</a>
+              <a class="nav-link" href="">SHOP</a>
+              <a class="nav-link" href="">LOST CIVILIZATION</a>
+            </div>
+
           </div>
 
-          <!-- Socials (side) -->
-          <div class="hidden flex-col items-end gap-5.5 pr-2 lg:flex">
-            <a href=""><img class="nav-social-icon" src="assets/icons/instagram.png" alt="Instagram"></a>
-            <a href=""><img class="nav-social-icon" src="assets/icons/tik-tok.png" alt="Tiktok"></a>
-            <a href=""><img class="nav-social-icon" src="assets/icons/twitter.png" alt="Twitter"></a>
-            <a href=""><img class="nav-social-icon" src="assets/icons/twitch.png" alt="Twitch"></a>
-            <a href=""><img class="nav-social-icon" src="assets/icons/facebook.png" alt="Facebook"></a>
-            <a href=""><img class="nav-social-icon" src="assets/icons/discord.png" alt="Discord"></a>
-            <a href=""><img class="nav-social-icon" src="assets/icons/play-button.png" alt="Monstercat Player"></a>
+          <!-- Sidenav bottom -->
+          <div class="flex flex-col gap-8.5 ml-2">
+
+            <!-- Socials -->
+            <div class="flex gap-5 ml-1">
+              <a href=""><img class="nav-social-icon" src="assets/icons/instagram.png" alt="Instagram"></a>
+              <a href=""><img class="nav-social-icon" src="assets/icons/tik-tok.png" alt="Tiktok"></a>
+              <a href=""><img class="nav-social-icon" src="assets/icons/twitter.png" alt="Twitter"></a>
+              <a href=""><img class="nav-social-icon" src="assets/icons/twitch.png" alt="Twitch"></a>
+              <a href=""><img class="nav-social-icon" src="assets/icons/facebook.png" alt="Facebook"></a>
+              <a href=""><img class="nav-social-icon" src="assets/icons/discord.png" alt="Discord"></a>
+              <a href=""><img class="nav-social-icon" src="assets/icons/play-button.png" alt="Monstercat Player"></a>
+            </div>
+
+            <!-- Sign in/up -->
+            <div class="flex items-center gap-4">
+              <a class="px-4.5 py-1 border-2 transition hover:text-background hover:bg-primary" href="">SIGN IN</a>
+              <a href="">OR SIGN UP</a>
+            </div>
+
           </div>
 
         </nav>
 
-      </div>
+    </div>
 
-      <!-- Sidenav -->
-      <nav class="sidenav hidden!">
-
-        <!-- Sidenav top -->
-        <div class="flex flex-col gap-16">
-
-          <!-- Logo/Title + close button-->
-          <div class="flex justify-between items-center">
-            <!-- Logo -->
-            <a href="" class="flex items-center gap-0.5">
-              <img class="sidenav-logo" src="cat.png" alt="Website logo">
-              <span class="font-body font-bold tracking-normal text-2xl">monstercat</span>
-            </a>
-            <!-- Close button -->
-            <button><img class="close-icon" src="assets/icons/x.png" alt="Close sidemenu button"></button>
-          </div>
-
-          <!-- Nav links -->
-          <div class="flex flex-col gap-5 ml-2">
-            <a class="nav-link" href="">MUSIC <img src="assets/icons/chevron-right.png" alt=""></a>
-            <a class="nav-link" href="">ARTISTS</a>
-            <a class="nav-link" href="">ABOUT <img src="assets/icons/chevron-right.png" alt=""></a>
-            <a class="nav-link" href="">NEWS</a>
-            <a class="nav-link" href="">EVENTS <img src="assets/icons/chevron-right.png" alt=""></a>
-            <a class="nav-link" href="">PROGRAMMING <img src="assets/icons/chevron-right.png" alt=""></a>
-            <a class="nav-link" href="">GOLD</a>
-            <a class="nav-link" href="">PARTNERS</a>
-            <a class="nav-link" href="">PRESS</a>
-            <a class="nav-link" href="">PLAYER</a>
-            <a class="nav-link" href="">SHOP</a>
-            <a class="nav-link" href="">LOST CIVILIZATION</a>
-          </div>
-
-        </div>
-
-        <!-- Sidenav bottom -->
-        <div class="flex flex-col gap-8.5 ml-2">
-
-          <!-- Socials -->
-          <div class="flex gap-5 ml-1">
-            <a href=""><img class="nav-social-icon" src="assets/icons/instagram.png" alt="Instagram"></a>
-            <a href=""><img class="nav-social-icon" src="assets/icons/tik-tok.png" alt="Tiktok"></a>
-            <a href=""><img class="nav-social-icon" src="assets/icons/twitter.png" alt="Twitter"></a>
-            <a href=""><img class="nav-social-icon" src="assets/icons/twitch.png" alt="Twitch"></a>
-            <a href=""><img class="nav-social-icon" src="assets/icons/facebook.png" alt="Facebook"></a>
-            <a href=""><img class="nav-social-icon" src="assets/icons/discord.png" alt="Discord"></a>
-            <a href=""><img class="nav-social-icon" src="assets/icons/play-button.png" alt="Monstercat Player"></a>
-          </div>
-
-          <!-- Sign in/up -->
-          <div class="flex items-center gap-4">
-            <a class="px-4.5 py-1 border-2 transition hover:text-background hover:bg-primary" href="">SIGN IN</a>
-            <a href="">OR SIGN UP</a>
-          </div>
-
-        </div>
-
-      </nav>
-
-      <div><img src="trophim-laptev-eeAxyRvgWzY-unsplash.jpg" alt=""></div>
+    <!-- Main wrapper for ALL content -->
+    <div class="main-wrapper">
 
       <!-- Album image, title, etc -->
-      <header  class="">
+      <header  class="hidden">
 
         <!-- Album image -->
-        <img src="trophim-laptev-eeAxyRvgWzY-unsplash.jpg" alt="Album cover">
+        <img class="w-80" src="trophim-laptev-eeAxyRvgWzY-unsplash.jpg" alt="Album cover">
 
         <!-- Album/Collection(?) name + Date released -->
         <span class="">Uncaged EP — Released October 20, 2025</span>
