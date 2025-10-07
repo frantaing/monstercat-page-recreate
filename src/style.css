@@ -44,8 +44,9 @@
 body {
     @apply
         overflow-x-hidden
+        flex flex-col items-center
         min-h-screen box-border
-        m-0 p-0
+        m-0 px-3.5
         font-heading text-base tracking-wider leading-normal text-primary
         bg-background
 }
@@ -55,20 +56,33 @@ body {
     @apply
         relative z-10 overflow-x-hidden
         flex flex-col items-center
-        w-full mt-28 px-3.5
+        w-full mt-28
         border-2 border-yellow-500
+
         md:mt-48
+        ml:w-[58rem]
+        xl:w-[72rem]
+        2xl:w-[93rem]
 }
 .topnav-wrapper { /* For topbar navigation */
     @apply
         flex justify-center
+}
+header {
+    @apply
+        flex flex-col items-start gap-6 
+        
+        md:gap-8
+        ml:flex-row ml:items-center ml:gap-11 ml:w-full
+
+        border-2 border-red-500
 }
 .album-cover-wrapper {
     @apply
         relative 
         flex flex-col gap-11 
         
-        md:flex-row md:items-end md:pl-2 md:ml-4
+        md:flex-row md:items-end md:pl-1.5 md:ml-4
 }
 
 /* Images & Icons */
@@ -105,8 +119,8 @@ body {
         w-lg 
         
         md:order-2 md:w-2xl 
-        ml:w-md 
-        xl:w-lg 
+        ml:w-[25.5rem]
+        xl:w-[29rem]
         2xl:w-2xl
 }
 
