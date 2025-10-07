@@ -119,41 +119,51 @@
     <div class="main-wrapper">
 
       <!-- Album image, title, etc -->
-      <header  class="flex flex-col items-start gap-2 border-2 border-red-500 ml:flex-row">
+      <header  class="flex flex-col items-start gap-6">
 
-        <!-- Album image -->
-        <img class="w-lg md:w-2xl ml:w-md xl:w-lg 2xl:w-2xl" src="salvatore-andrea-santacroce-Nc0xNgW3G-k-unsplash.jpg" alt="Album cover">
+        <div class="album-cover-wrapper">
 
-        <!-- Album/Collection(?) name + Date released -->
-        <span class="mt-8 mb-5 font-body italic text-sm"><span class="font-semibold text-accent">Uncaged EP</span> — Released October 20, 2025</span>
+          <!-- Album image -->
+          <img class="album-img" src="salvatore-andrea-santacroce-Nc0xNgW3G-k-unsplash.jpg" alt="Album cover">
 
-        <!-- Album title(?) + Artist -->
-        <div class="flex flex-col gap-2">
-          <h1 class="text-2xl">APEX PROTOCOL</h1>
-          <h2 class="">AURORA BOREALIS</h2>
+          <span class="rotating-text">
+            <span class="font-semibold text-accent">Uncaged EP</span> — Released October 20, 2025
+          </span>          
+                
         </div>
 
-        <!-- Listen + Share buttons -->
-        <div class="flex items-center gap-2 mt-4">
-          <!-- Listen -->
-          <button class="button group flex items-center gap-1 bg-accent border-accent">
-            <div>
-              <img class="w-5 group-hover:hidden" src="assets/icons/play.png" alt="Play album button">
-              <img class="w-5 hidden group-hover:block" src="assets/icons/play-black.png" alt="Play album button hover">
-            </div>
+        <!-- Album details -->
+        <div class="flex flex-col gap-5">
 
-            <span>LISTEN NOW</span>
-          </button>
+          <!-- Album title(?) + Artist -->
+          <div class="flex flex-col gap-1">
+            <h1 class="text-2xl">APEX PROTOCOL</h1>
+            <h2 class="sm:text-xl">AURORA BOREALIS</h2>
+          </div>
 
-          <!-- Share -->
-          <button class="button group flex items-center gap-2">
-            <div>
-              <img class="w-5 group-hover:hidden" src="assets/icons/share.png" alt="Share album button">
-              <img class="w-5 hidden group-hover:block" src="assets/icons/share-black.png" alt="Share album button hover">
-            </div>
+          <!-- Listen + Share buttons -->
+          <div class="flex items-center gap-2">
+            <!-- Listen -->
+            <button class="button group flex items-center gap-1 bg-accent border-accent">
+              <div>
+                <img class="w-5 group-hover:hidden" src="assets/icons/play.png" alt="Play album button">
+                <img class="w-5 hidden group-hover:block" src="assets/icons/play-black.png" alt="Play album button hover">
+              </div>
 
-            <span>SHARE</span>
-          </button>
+              <span>LISTEN NOW</span>
+            </button>
+
+            <!-- Share -->
+            <button class="button group flex items-center gap-2">
+              <div>
+                <img class="w-5 group-hover:hidden" src="assets/icons/share.png" alt="Share album button">
+                <img class="w-5 hidden group-hover:block" src="assets/icons/share-black.png" alt="Share album button hover">
+              </div>
+
+              <span>SHARE</span>
+            </button>
+          </div>
+
         </div>
 
       </header>

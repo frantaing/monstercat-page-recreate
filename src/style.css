@@ -63,6 +63,13 @@ body {
     @apply
         flex justify-center
 }
+.album-cover-wrapper {
+    @apply
+        relative 
+        flex flex-col gap-11 
+        
+        md:flex-row md:items-end md:pl-2 md:ml-4
+}
 
 /* Images & Icons */
 .topnav-logo { /* Logo for topbar */
@@ -91,6 +98,26 @@ body {
         bg-cover bg-center bg-no-repeat
         blur opacity-40 scale-x-105
         bg-[linear-gradient(to_bottom,transparent_50%,theme(colors.background)),url(/salvatore-andrea-santacroce-Nc0xNgW3G-k-unsplash.jpg)]
+}
+.album-img {
+    @apply
+        order-1 
+        w-lg 
+        
+        md:order-2 md:w-2xl 
+        ml:w-md 
+        xl:w-lg 
+        2xl:w-2xl
+}
+
+/* Text */
+.rotating-text {
+    @apply
+        order-2 
+        font-body italic text-xs 
+        
+        sm:text-sm 
+        md:absolute md:bottom-0 md:left-0 md:order-1 md:whitespace-nowrap md:origin-bottom-left md:-rotate-90
 }
 
 /* Links and buttons */
