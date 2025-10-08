@@ -61,7 +61,7 @@ This is a **WIP**! 🤫
   - [x] Topbar navigation?
     - [x] Blurry topbar background?
   - [x] Sidebar navigation?
-- [ ] Header/Hero/Album?
+- [x] Header/Hero/Album?
 - [ ] Streaming?
   - [ ] Tooltips?
 - [ ] Track List?
