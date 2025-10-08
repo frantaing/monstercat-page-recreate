@@ -57,7 +57,6 @@ body {
         relative z-10 overflow-x-hidden
         flex flex-col items-center
         w-full mt-28
-        border-2 border-yellow-500
 
         md:mt-48
         ml:w-[58rem]
@@ -73,16 +72,15 @@ header {
         flex flex-col items-start gap-6 
         
         md:gap-8
-        ml:flex-row ml:items-center ml:gap-11 ml:w-full
-
-        border-2 border-red-500
+        ml:flex-row ml:items-center ml:gap-12 ml:w-full
+        xl:gap-18
 }
 .album-cover-wrapper {
     @apply
         relative 
         flex flex-col gap-11 
         
-        md:flex-row md:items-end md:pl-1.5 md:ml-4
+        md:flex-row md:items-end md:pl-1 md:ml-5.5
 }
 
 /* Images & Icons */
@@ -118,9 +116,9 @@ header {
         order-1 
         w-lg 
         
-        md:order-2 md:w-2xl 
+        md:order-2 md:w-[44.5rem]
         ml:w-[25.5rem]
-        xl:w-[29rem]
+        xl:w-[30rem]
         2xl:w-2xl
 }
 
@@ -130,7 +128,7 @@ header {
         order-2 
         font-body italic text-xs 
         
-        sm:text-sm 
+        sm:text-lg
         md:absolute md:bottom-0 md:left-0 md:order-1 md:whitespace-nowrap md:origin-bottom-left md:-rotate-90
 }
 
@@ -148,9 +146,11 @@ header {
     @apply
         pr-7 pl-5 py-2.5
         text-xs
-        border-2 
+        border-2 cursor-pointer
         transition
-        hover:text-background hover:bg-primary
+        hover:text-background hover:bg-primary hover:border-transparent
+
+        md:pr-9 md:pl-7 md:py-3.5 md:text-base
 }
 
 /* Navigation */
@@ -162,7 +162,7 @@ header {
         bg-background/40 backdrop-blur-sm
 
         sm:pl-4.5 sm:py-2.5
-        lg:max-w-[78rem] lg:bg-background/0 lg:pl-8 lg:pr-7 lg:py-6.5 lg:backdrop-blur-none
+        lg:z-0 lg:max-w-[78rem] lg:bg-background/0 lg:pl-8 lg:pr-7 lg:py-6.5 lg:backdrop-blur-none
         xl:max-w-[91rem]
         2xl:max-w-[116rem]
 }
