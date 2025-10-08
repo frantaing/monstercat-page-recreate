@@ -20,7 +20,7 @@
     --font-heading: "Special Gothic Expanded One", sans-serif;          /* For headings (Album name, buttons, Stream/Track, etc) */
     --font-body: "Montserrat", sans-serif;                              /* For general body font */
     /* Colors */
-    --color-accent: #679E85;                                            /* [Green] accent color for buttons */
+    --color-accent: #50A584;                                            /* [Green] accent color for buttons */
     --color-primary: #fdfdfd;                                           /* [White-ish] for text and icons */
     --color-secondary: #383838;                                         /* [Grey] for News (?) */
     --color-background: #000;                                           /* [Black] for background */
