@@ -20,12 +20,14 @@
     --font-heading: "Special Gothic Expanded One", sans-serif;          /* For headings (Album name, buttons, Stream/Track, etc) */
     --font-body: "Montserrat", sans-serif;                              /* For general body font */
     /* Colors */
-    --color-accent: #679E85;                                            /* [Green] accent color for buttons */
+    --color-accent: #50A584;                                            /* [Green] accent color for buttons */
     --color-primary: #fdfdfd;                                           /* [White-ish] for text and icons */
     --color-secondary: #383838;                                         /* [Grey] for News (?) */
-    --color-background: #000;                                        /* [Black] for background */
+    --color-background: #000;                                           /* [Black] for background */
 
     --breakpoint-sm: 33rem;
+    --breakpoint-md: 48rem;
+    --breakpoint-ml: 62rem;
     --breakpoint-lg: 74rem;
     --breakpoint-xl: 90rem;
     --breakpoint-2xl: 120rem;
@@ -42,8 +44,9 @@
 body {
     @apply
         overflow-x-hidden
+        flex flex-col items-center
         min-h-screen box-border
-        m-0 p-0
+        m-0 px-3.5
         font-heading text-base tracking-wider leading-normal text-primary
         bg-background
 }
@@ -51,14 +54,33 @@ body {
 /* Wrappers */
 .main-wrapper { /* For whole site */
     @apply
-        relative z-10
-        flex flex-col
-        w-full mt-26
+        relative z-10 overflow-x-hidden
+        flex flex-col items-center
+        w-full mt-28
 
+        md:mt-48
+        ml:w-[58rem]
+        xl:w-[72rem]
+        2xl:w-[93rem]
 }
 .topnav-wrapper { /* For topbar navigation */
     @apply
         flex justify-center
+}
+header {
+    @apply
+        flex flex-col items-start gap-6 
+        
+        md:gap-8
+        ml:flex-row ml:items-center ml:gap-12 ml:w-full
+        xl:gap-18
+}
+.album-cover-wrapper {
+    @apply
+        relative 
+        flex flex-col gap-11 
+        
+        md:flex-row md:items-end md:pl-1 md:ml-5.5
 }
 
 /* Images & Icons */
@@ -84,13 +106,33 @@ body {
 .background-img {
     @apply
         absolute top-0 left-0 right-0
-        h-screen
+        h-[110vh]
         bg-cover bg-center bg-no-repeat
-        blur opacity-50 scale-x-105
-        bg-[linear-gradient(to_bottom,transparent_90%,theme(colors.background)),url(/public/trophim-laptev-eeAxyRvgWzY-unsplash.jpg)]
+        blur opacity-40 scale-x-105
+        bg-[linear-gradient(to_bottom,transparent_50%,theme(colors.background)),url(/salvatore-andrea-santacroce-Nc0xNgW3G-k-unsplash.jpg)]
+}
+.album-img {
+    @apply
+        order-1 
+        w-lg 
+        
+        md:order-2 md:w-[44.5rem]
+        ml:w-[25.5rem]
+        xl:w-[30rem]
+        2xl:w-2xl
 }
 
-/* Links */
+/* Text */
+.rotating-text {
+    @apply
+        order-2 
+        font-body italic text-xs 
+        
+        sm:text-lg
+        md:absolute md:bottom-0 md:left-0 md:order-1 md:whitespace-nowrap md:origin-bottom-left md:-rotate-90
+}
+
+/* Links and buttons */
 .nav-link { /* Navigation link */
     @apply
         flex items-center gap-2.5
@@ -99,6 +141,16 @@ body {
 .nav-link img { /* Nav-link sub-menu arrow */
     @apply
         w-4.5
+}
+.button {
+    @apply
+        pr-7 pl-5 py-2.5
+        text-xs
+        border-2 cursor-pointer
+        transition
+        hover:text-background hover:bg-primary hover:border-transparent
+
+        md:pr-9 md:pl-7 md:py-3.5 md:text-base
 }
 
 /* Navigation */
@@ -110,7 +162,7 @@ body {
         bg-background/40 backdrop-blur-sm
 
         sm:pl-4.5 sm:py-2.5
-        lg:max-w-[78rem] lg:bg-background/0 lg:pl-8 lg:pr-7 lg:py-6.5
+        lg:z-0 lg:max-w-[78rem] lg:bg-background/0 lg:pl-8 lg:pr-7 lg:py-6.5 lg:backdrop-blur-none
         xl:max-w-[91rem]
         2xl:max-w-[116rem]
 }
