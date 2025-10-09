@@ -62,8 +62,8 @@ This is a **WIP**! 🤫
     - [x] Blurry topbar background?
   - [x] Sidebar navigation?
 - [x] Header/Hero/Album?
-- [ ] Streaming?
-  - [ ] Tooltips?
+- [x] Streaming?
+  - [x] Tooltips?
 - [ ] Track List?
 - [ ] Music Video?
 - [ ] Footer?
