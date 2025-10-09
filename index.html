@@ -26,13 +26,13 @@
 
               <!-- Socials (top) -->
               <div class="hidden gap-5.5 sm:flex lg:hidden">
-                <a href=""><img class="nav-social-icon" src="assets/icons/instagram.png" alt="Instagram"></a>
-                <a href=""><img class="nav-social-icon" src="assets/icons/tik-tok.png" alt="Tiktok"></a>
-                <a href=""><img class="nav-social-icon" src="assets/icons/twitter.png" alt="Twitter"></a>
-                <a href=""><img class="nav-social-icon" src="assets/icons/twitch.png" alt="Twitch"></a>
-                <a href=""><img class="nav-social-icon" src="assets/icons/facebook.png" alt="Facebook"></a>
-                <a href=""><img class="nav-social-icon" src="assets/icons/discord.png" alt="Discord"></a>
-                <a href=""><img class="nav-social-icon" src="assets/icons/play-button.png" alt="Monstercat Player"></a>
+                <a href=""><img class="social-icon" src="assets/icons/instagram.png" alt="Instagram"></a>
+                <a href=""><img class="social-icon" src="assets/icons/tik-tok.png" alt="Tiktok"></a>
+                <a href=""><img class="social-icon" src="assets/icons/twitter.png" alt="Twitter"></a>
+                <a href=""><img class="social-icon" src="assets/icons/twitch.png" alt="Twitch"></a>
+                <a href=""><img class="social-icon" src="assets/icons/facebook.png" alt="Facebook"></a>
+                <a href=""><img class="social-icon" src="assets/icons/discord.png" alt="Discord"></a>
+                <a href=""><img class="social-icon" src="assets/icons/play-button.png" alt="Monstercat Player"></a>
               </div>
 
               <!-- hamburger menu -->
@@ -41,13 +41,13 @@
 
             <!-- Socials (side) -->
             <div class="hidden flex-col items-end gap-5.5 pr-2 lg:flex">
-              <a href=""><img class="nav-social-icon" src="assets/icons/instagram.png" alt="Instagram"></a>
-              <a href=""><img class="nav-social-icon" src="assets/icons/tik-tok.png" alt="Tiktok"></a>
-              <a href=""><img class="nav-social-icon" src="assets/icons/twitter.png" alt="Twitter"></a>
-              <a href=""><img class="nav-social-icon" src="assets/icons/twitch.png" alt="Twitch"></a>
-              <a href=""><img class="nav-social-icon" src="assets/icons/facebook.png" alt="Facebook"></a>
-              <a href=""><img class="nav-social-icon" src="assets/icons/discord.png" alt="Discord"></a>
-              <a href=""><img class="nav-social-icon" src="assets/icons/play-button.png" alt="Monstercat Player"></a>
+              <a href=""><img class="social-icon" src="assets/icons/instagram.png" alt="Instagram"></a>
+              <a href=""><img class="social-icon" src="assets/icons/tik-tok.png" alt="Tiktok"></a>
+              <a href=""><img class="social-icon" src="assets/icons/twitter.png" alt="Twitter"></a>
+              <a href=""><img class="social-icon" src="assets/icons/twitch.png" alt="Twitch"></a>
+              <a href=""><img class="social-icon" src="assets/icons/facebook.png" alt="Facebook"></a>
+              <a href=""><img class="social-icon" src="assets/icons/discord.png" alt="Discord"></a>
+              <a href=""><img class="social-icon" src="assets/icons/play-button.png" alt="Monstercat Player"></a>
             </div>
 
           </nav>
@@ -94,13 +94,13 @@
 
             <!-- Socials -->
             <div class="flex gap-5 ml-1">
-              <a href=""><img class="nav-social-icon" src="assets/icons/instagram.png" alt="Instagram"></a>
-              <a href=""><img class="nav-social-icon" src="assets/icons/tik-tok.png" alt="Tiktok"></a>
-              <a href=""><img class="nav-social-icon" src="assets/icons/twitter.png" alt="Twitter"></a>
-              <a href=""><img class="nav-social-icon" src="assets/icons/twitch.png" alt="Twitch"></a>
-              <a href=""><img class="nav-social-icon" src="assets/icons/facebook.png" alt="Facebook"></a>
-              <a href=""><img class="nav-social-icon" src="assets/icons/discord.png" alt="Discord"></a>
-              <a href=""><img class="nav-social-icon" src="assets/icons/play-button.png" alt="Monstercat Player"></a>
+              <a href=""><img class="social-icon" src="assets/icons/instagram.png" alt="Instagram"></a>
+              <a href=""><img class="social-icon" src="assets/icons/tik-tok.png" alt="Tiktok"></a>
+              <a href=""><img class="social-icon" src="assets/icons/twitter.png" alt="Twitter"></a>
+              <a href=""><img class="social-icon" src="assets/icons/twitch.png" alt="Twitch"></a>
+              <a href=""><img class="social-icon" src="assets/icons/facebook.png" alt="Facebook"></a>
+              <a href=""><img class="social-icon" src="assets/icons/discord.png" alt="Discord"></a>
+              <a href=""><img class="social-icon" src="assets/icons/play-button.png" alt="Monstercat Player"></a>
             </div>
 
             <!-- Sign in/up -->
@@ -137,8 +137,8 @@
 
           <!-- Album title(?) + Artist -->
           <div class="flex flex-col gap-1 md:gap-3">
-            <h1 class="text-2xl md:text-4xl md:text-transparent md:[-webkit-text-stroke:1px_white] xl:text-5xl">APEX PROTOCOL</h1>
-            <h2 class="sm:text-xl md:text-2xl">AURORA BOREALIS</h2>
+            <h2>APEX PROTOCOL</h1>
+            <h3>AURORA BOREALIS</h2>
           </div>
 
           <!-- Listen + Share buttons -->
@@ -169,21 +169,39 @@
       </header>
 
       <!-- Stream it... -->
-      <section  class="hidden">
+      <section  class="stream-wrapper">
         <h1>STREAM IT YOUR WAY</h1>
 
         <!-- Platform icons -->
-        <div class="">
-          <button class="">
-            <img src="assets/icons/play-button.png" alt="Stream it on Monstercat player">
-            <span>PLAYER</span>
+        <div class="flex items-center">
+          <!-- Add "relative" to each button -->
+          <a class="bordered-button group relative flex items-center gap-2 py-3.1! border-l-2">
+            <img class="social-icon" src="assets/icons/play-button.png" alt="Stream it on Monstercat player">
+            <span class="text-xs">PLAYER</span>
+            <div class="tooltip group-hover:opacity-100">STREAM ON MONSTERCAT PLAYER</div>
           </button>
-          <button><img src="assets/icons/bandcamp.png" alt="Stream it on Bandcamp"></button>
-          <button><img src="assets/icons/soundcloud.png" alt="Stream it on Soundcloud"></button>
-          <button><img src="assets/icons/apple.png" alt="Stream it on Apple Music"></button>
-          <button><img src="assets/icons/youtube.png" alt="Stream it on Youtube"></button>
-          <button><img src="assets/icons/spotify.png" alt="Stream it on Spotify"></button>
+          <a class="bordered-button group relative">
+            <img class="social-icon" src="assets/icons/bandcamp.png" alt="Stream it on Bandcamp">
+            <div class="tooltip">STREAM ON BANDCAMP</div>
+          </button>
+          <a class="bordered-button group relative">
+            <img class="social-icon" src="assets/icons/soundcloud.png" alt="Stream it on Soundcloud">
+            <div class="tooltip group-hover:opacity-100">STREAM ON SOUNDCLOUD</div>
+          </button>
+          <a class="bordered-button group relative">
+            <img class="social-icon" src="assets/icons/apple.png" alt="Stream it on Apple Music">
+            <div class="tooltip group-hover:opacity-100">STREAM ON APPLE</div>
+          </button>
+          <a class="bordered-button group relative">
+            <img class="social-icon" src="assets/icons/youtube.png" alt="Stream it on Youtube">
+            <div class="tooltip group-hover:opacity-100">STREAM ON YOUTUBE</div>
+          </button>
+          <a class="bordered-button group relative">
+            <img class="social-icon" src="assets/icons/spotify.png" alt="Stream it on Spotify">
+            <div class="tooltip group-hover:opacity-100">STREAM ON SPOTIFY</div>
+          </button>
         </div>
+
       </section>
 
       <!-- Track list -->
