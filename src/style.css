@@ -54,7 +54,7 @@ body {
 /* Wrappers */
 .main-wrapper { /* For whole site */
     @apply
-        relative z-10 overflow-x-hidden
+        relative z-10
         flex flex-col items-center gap-5
         w-fit mt-28
 
@@ -157,6 +157,35 @@ h3 { /* Artist */
         
         sm:text-lg
         md:absolute md:bottom-0 md:left-0 md:order-1 md:whitespace-nowrap md:origin-bottom-left md:-rotate-90
+}
+
+/* Tooltips */
+.tooltip {
+    @apply
+    absolute z-10
+    px-2 py-1
+    font-body font-semibold text-xs text-background whitespace-nowrap
+    bg-primary
+    bottom-full left-1/2 -translate-x-1/2 
+    invisible opacity-0 transition-opacity;
+}
+
+.tooltip::after {
+    @apply
+        absolute;
+        
+        content: '';
+        top: 100%; 
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 6px;
+        border-style: solid;
+        border-color: theme('colors.primary') transparent transparent transparent;
+}
+
+.group:hover .tooltip {
+    @apply 
+    visible opacity-100;
 }
 
 /* Links and buttons */
