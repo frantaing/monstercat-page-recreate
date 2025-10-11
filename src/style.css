@@ -89,6 +89,34 @@ header {
         
         md:gap-10 ml:mt-20
 }
+.tracklist-wrapper {
+    @apply
+        flex flex-col gap-7 
+        
+        md:gap-11 
+        xl:gap-12
+}
+.list-o-tracks-wrapper {
+    @apply
+        flex flex-col gap-6 
+        mr-1.5 ml-2 
+        font-body 
+        
+        md:mr-0 md:ml-2 
+        xl:mr-8
+}
+.track-item {
+    @apply
+        flex justify-between items-center
+}
+.duration-share {
+    @apply
+        flex items-center gap-2 
+        
+        md:gap-8 
+        xl:gap-12 
+        2xl:gap-18
+}
 
 /* Images & Icons */
 .topnav-logo { /* Logo for topbar */
