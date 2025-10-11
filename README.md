@@ -64,13 +64,14 @@ This is a **WIP**! 🤫
 - [x] Header/Hero/Album?
 - [x] Streaming?
   - [x] Tooltips?
-- [ ] Track List?
+- [x] Track List?
 - [ ] Music Video?
 - [ ] Footer?
 - [ ] Background image?
 
 #### Javascript 🌚
 - [ ] Sidebar navigation?
+- [ ] Populate Tracklist with actual songs?
 - [ ] Working music player?
 
 #### Final stuff ✨
