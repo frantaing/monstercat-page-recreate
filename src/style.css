@@ -46,7 +46,7 @@ body {
         overflow-x-hidden
         flex flex-col items-center
         min-h-screen box-border
-        m-0 px-3.5
+        m-0 px-4
         font-heading text-base tracking-wider leading-normal text-primary
         bg-background
 }
@@ -58,10 +58,10 @@ body {
         flex flex-col items-center gap-5
         w-fit mt-28
 
-        md:mt-48
+        md:mt-48 md:mr-7.5
         ml:w-[58rem]
-        xl:w-[72rem]
-        2xl:w-[93rem]
+        xl:w-[72rem] xl:mr-5
+        2xl:w-[92rem]
 }
 .topnav-wrapper { /* For topbar navigation */
     @apply
@@ -69,7 +69,7 @@ body {
 }
 header {
     @apply
-        flex flex-col items-start gap-6 
+        flex flex-col items-start gap-7
         
         md:gap-8
         ml:flex-row ml:items-center ml:gap-12 ml:w-full
@@ -87,7 +87,7 @@ header {
         flex flex-col items-start gap-4 
         w-full mt-14 
         
-        md:gap-7 ml:mt-20
+        md:gap-10 ml:mt-20
 }
 
 /* Images & Icons */
@@ -126,7 +126,7 @@ header {
         md:order-2 md:w-[44.5rem]
         ml:w-[25.5rem]
         xl:w-[30rem]
-        2xl:w-2xl
+        2xl:w-[40.5rem]
 }
 
 /* Text */
@@ -157,6 +157,25 @@ h3 { /* Artist */
         
         sm:text-lg
         md:absolute md:bottom-0 md:left-0 md:order-1 md:whitespace-nowrap md:origin-bottom-left md:-rotate-90
+}
+.track-num {
+    @apply
+        mr-7
+        font-normal text-lg
+        
+}
+.track-title {
+    @apply
+        font-semibold text-lg
+}
+.track-artist {
+    @apply
+        font-semibold text-xs
+        -translate-y-1
+}
+.track-duration {
+    @apply
+    font-normal text-lg
 }
 
 /* Tooltips */
