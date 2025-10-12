@@ -105,18 +105,11 @@ header {
         md:mr-0 md:ml-2 
         xl:mr-8
 }
-.track-item {
+.video-wrapper {
     @apply
-        flex justify-between items-center
+        flex flex-col gap-5
 }
-.duration-share {
-    @apply
-        flex items-center gap-2 
-        
-        md:gap-8 
-        xl:gap-12 
-        2xl:gap-18
-}
+
 
 /* Images & Icons */
 .topnav-logo { /* Logo for topbar */
@@ -155,6 +148,16 @@ header {
         ml:w-[25.5rem]
         xl:w-[30rem]
         2xl:w-[40.5rem]
+}
+iframe {
+    @apply
+        w-full h-70 
+        
+        md:h-[25rem] 
+        ml:h-[33rem] 
+        lg:h-[34rem] 
+        xl:h-[40rem] 
+        2xl:h-[52rem]
 }
 
 /* Text */
@@ -283,4 +286,18 @@ h3 { /* Artist */
         flex flex-col justify-between self-end
         w-[26rem] h-full pl-5 pr-8 py-7.5
         bg-background
+}
+
+/* Tracklist section stuff */
+.track-item {
+    @apply
+        flex justify-between items-center
+}
+.duration-share {
+    @apply
+        flex items-center gap-2 
+        
+        md:gap-8 
+        xl:gap-12 
+        2xl:gap-18
 }
