@@ -65,7 +65,7 @@ This is a **WIP**! 🤫
 - [x] Streaming?
   - [x] Tooltips?
 - [x] Track List?
-- [ ] Music Video?
+- [x] Music Video?
 - [ ] Footer?
 - [ ] Background image?
 
