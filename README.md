@@ -20,6 +20,10 @@ The goal is to recerate the structure, appearance, and behavior of **Monstercat'
 - Mobile-first layout
 - Responsive design
 - Layout, hover states, and interaction mimicry (attempt)
+- Blurred and transparent top navigation bar
+- Blurred background image
+- Cool Youtube video player (just an iframe, but don't worry about it)
+- Working music player
 
 <br>
 
