@@ -110,7 +110,18 @@ header {
     @apply
         flex flex-col gap-5
 }
-
+footer {
+    @apply
+        flex flex-col gap-10
+        mt-16
+}
+.footer-main-wrapper {
+    @apply
+    flex flex-col
+    py-12
+    font-heading
+    border-y-2
+}
 
 /* Images & Icons */
 .topnav-logo { /* Logo for topbar */
