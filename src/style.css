@@ -56,9 +56,10 @@ body {
     @apply
         relative z-10
         flex flex-col items-center gap-5
-        w-fit mt-28
+        w-full mt-28
 
-        md:mt-48 md:mr-7.5
+        sm:w-[31.5rem]
+        md:w-[45.5rem] md:mt-48
         ml:w-[58rem]
         xl:w-[72rem] xl:mr-5
         2xl:w-[92rem]
