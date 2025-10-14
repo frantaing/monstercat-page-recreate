@@ -22,7 +22,7 @@
     /* Colors */
     --color-accent: #50A584;                                            /* [Green] accent color for buttons */
     --color-primary: #fdfdfd;                                           /* [White-ish] for text and icons */
-    --color-secondary: #383838;                                         /* [Grey] for News (?) */
+    --color-secondary: #898888;                                         /* [Grey] for News (?) */
     --color-background: #0E0B0C;                                           /* [Black] for background */
 
     --breakpoint-sm: 33rem;
