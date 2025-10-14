@@ -22,8 +22,8 @@
     /* Colors */
     --color-accent: #50A584;                                            /* [Green] accent color for buttons */
     --color-primary: #fdfdfd;                                           /* [White-ish] for text and icons */
-    --color-secondary: #383838;                                         /* [Grey] for News (?) */
-    --color-background: #000;                                           /* [Black] for background */
+    --color-secondary: #898888;                                         /* [Grey] for News (?) */
+    --color-background: #0E0B0C;                                           /* [Black] for background */
 
     --breakpoint-sm: 33rem;
     --breakpoint-md: 48rem;
@@ -56,9 +56,10 @@ body {
     @apply
         relative z-10
         flex flex-col items-center gap-5
-        w-fit mt-28
+        w-full mt-28
 
-        md:mt-48 md:mr-7.5
+        sm:w-[31.5rem]
+        md:w-[45.5rem] md:mt-48
         ml:w-[58rem]
         xl:w-[72rem] xl:mr-5
         2xl:w-[92rem]
@@ -109,7 +110,20 @@ header {
     @apply
         flex flex-col gap-5
 }
+footer {
+    @apply
+        flex flex-col gap-10
+        mt-16
+}
+.footer-main-wrapper {
+    @apply
+    flex flex-col
+    py-12
+    font-heading
+    border-y-2
 
+    md:grid md:grid-cols-3 md:justify-items-start md:text-xl
+}
 
 /* Images & Icons */
 .topnav-logo { /* Logo for topbar */
@@ -181,6 +195,16 @@ h3 { /* Artist */
         sm:text-xl
         md:text-2xl
 }
+p {
+    @apply
+        font-body italic text-sm
+}
+input {
+    @apply
+        w-full 
+        text-xl font-body font-medium 
+        focus:outline-0
+}
 .rotating-text {
     @apply
         order-2 
@@ -207,6 +231,11 @@ h3 { /* Artist */
 .track-duration {
     @apply
     font-normal text-lg
+}
+.acknowledgements {
+    @apply
+        mt-5 mb-20 
+        font-body italic text-center text-xs
 }
 
 /* Tooltips */
@@ -300,4 +329,20 @@ h3 { /* Artist */
         md:gap-8 
         xl:gap-12 
         2xl:gap-18
+}
+
+/* Footer */
+.newsletter-wrapper {
+    @apply
+        flex flex-col gap-10 
+        mt-12 
+        text-secondary 
+        
+        md:mt-0
+}
+.footer-copy-socials {
+    @apply
+        flex flex-col gap-5 
+        
+        md:flex-row md:justify-between
 }
