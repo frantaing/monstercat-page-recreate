@@ -195,6 +195,16 @@ h3 { /* Artist */
         sm:text-xl
         md:text-2xl
 }
+p {
+    @apply
+        font-body italic text-sm
+}
+input {
+    @apply
+        w-full 
+        text-xl font-body font-medium 
+        focus:outline-0
+}
 .rotating-text {
     @apply
         order-2 
@@ -221,6 +231,11 @@ h3 { /* Artist */
 .track-duration {
     @apply
     font-normal text-lg
+}
+.acknowledgements {
+    @apply
+        mt-5 mb-20 
+        font-body italic text-center text-xs
 }
 
 /* Tooltips */
@@ -314,4 +329,20 @@ h3 { /* Artist */
         md:gap-8 
         xl:gap-12 
         2xl:gap-18
+}
+
+/* Footer */
+.newsletter-wrapper {
+    @apply
+        flex flex-col gap-10 
+        mt-12 
+        text-secondary 
+        
+        md:mt-0
+}
+.footer-copy-socials {
+    @apply
+        flex flex-col gap-5 
+        
+        md:flex-row md:justify-between
 }
