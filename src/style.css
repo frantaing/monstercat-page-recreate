@@ -121,6 +121,8 @@ footer {
     py-12
     font-heading
     border-y-2
+
+    md:grid md:grid-cols-3 md:justify-items-start md:text-xl
 }
 
 /* Images & Icons */
