@@ -70,8 +70,8 @@ This is a **WIP**! 🤫
   - [x] Tooltips?
 - [x] Track List?
 - [x] Music Video?
-- [ ] Footer?
-- [ ] Background image?
+- [x] Footer?
+- [x] Background image?
 
 #### Javascript 🌚
 - [ ] Sidebar navigation?
