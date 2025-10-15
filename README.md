@@ -74,7 +74,7 @@ This is a **WIP**! 🤫
 - [x] Background image?
 
 #### Javascript 🌚
-- [ ] Sidebar navigation?
+- [x] Sidebar navigation?
 - [ ] Populate Tracklist with actual songs?
 - [ ] Working music player?
 
