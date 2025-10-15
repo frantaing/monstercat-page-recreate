@@ -314,6 +314,7 @@ input {
         flex flex-col justify-between self-end
         w-[26rem] h-full pl-5 pr-8 py-7.5
         bg-background
+        transform transition-transform duration-300 ease-in-out
 }
 #sidenav-overlay {
     @apply
