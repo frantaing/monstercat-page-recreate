@@ -141,7 +141,7 @@ footer {
     @apply
         w-4.5
 }
-.close-icon { /* Sidemenu close button icon */
+.sidenav-toggle-icon { /* Sidemenu close button icon */
     @apply
         w-9
         cursor-pointer
