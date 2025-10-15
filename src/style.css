@@ -144,6 +144,7 @@ footer {
 .close-icon { /* Sidemenu close button icon */
     @apply
         w-9
+        cursor-pointer
 }
 .background-img {
     @apply
@@ -248,7 +249,6 @@ input {
     bottom-full left-1/2 -translate-x-1/2 
     invisible opacity-0 transition-opacity;
 }
-
 .tooltip::after {
     @apply
         absolute;
@@ -261,7 +261,6 @@ input {
         border-style: solid;
         border-color: theme('colors.primary') transparent transparent transparent;
 }
-
 .group:hover .tooltip {
     @apply 
     visible opacity-100;
@@ -311,10 +310,14 @@ input {
 }
 .sidenav { /* Hidden side menu */
     @apply
-        fixed z-99
+        fixed z-100 top-0 right-0
         flex flex-col justify-between self-end
         w-[26rem] h-full pl-5 pr-8 py-7.5
         bg-background
+}
+#sidenav-overlay {
+    @apply
+        fixed inset-0 z-[99]
 }
 
 /* Tracklist section stuff */
