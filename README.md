@@ -75,8 +75,8 @@ This is a **WIP**! 🤫
 
 #### Javascript 🌚
 - [x] Sidebar navigation?
-- [ ] Populate Tracklist with actual songs?
-- [ ] Working music player?
+- [x] Populate Tracklist with actual songs?
+- [x] Working music player?
 
 #### Final stuff ✨
 - [ ] Final code cleanup and commenting
