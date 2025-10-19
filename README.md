@@ -2,7 +2,7 @@
 
 A responsive front-end recreation of [Monstercat's album release page](https://www.monstercat.com/release/MCLP017). This is a self-directed challenge from [Frontend Practice](https://www.frontendpractice.com/projects/monstercat).
 
-👉 Not yet...
+👉 [Check out the live demo!](https://overuseofrem.github.io/monstercat-page-recreate/)
 
 <br>
 
@@ -80,8 +80,8 @@ This is a **WIP**! 🤫
 
 #### Final stuff ✨
 - [ ] Final code cleanup and commenting
-- [ ] Deploy the site to Github Pages
-- [ ] Add the live site link to the top of the README
+- [x] Deploy the site to Github Pages
+- [x] Add the live site link to the top of the README
 
 <br>
 
