@@ -1,10 +1,32 @@
+/**
+ * @typedef {object} Track
+ * @property {string} title - The title of the track.
+ * @property {string} artist - The artist(s) of the track.
+ * @property {string} duration - The duration of the track in "m:ss" format.
+ * @property {string} filePath - The relative path to the audio file for the track.
+ */
+
+/**
+ * @typedef {object} Album
+ * @property {string} title - The main title of the album.
+ * @property {string} artist - The main artist of the album.
+ * @property {Track[]} tracks - An array of track objects.
+ */
+
+/**
+ * Album data object.
+ * This object contains all the necessary metadata for the album page,
+ * including the album title, artist, and a detailed list of tracks.
+ * This data is imported by main.js to dynamically populate the tracklist.
+ * @type {Album}
+ */
 export const album = {
 
     title: "APEX PROTOCOL",
     artist: "AURORA BOREALIS",
 
+    // An array of objects, where each object represents a single track on the album.
     tracks: [
-
         {
             title: "The Ascent",
             artist: "Cartoon & Jéja",
@@ -65,7 +87,5 @@ export const album = {
             duration: "2:02",
             filePath: "music/10_protocol-complete.mp3"
         }
-
     ]
-
-}
+};

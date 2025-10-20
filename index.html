@@ -7,27 +7,30 @@
   </head>
   <body>
 
-    <!-- Album cover background image -->
-    <div class="background-img"></div>
+    <!-- =================================================================
+    BACKGROUND & OVERLAY
+    ================================================================== -->
 
-    <!-- Overlay for sidenav -->
+    <!-- Album cover background image with blur and overlay effect -->
+    <div class="background-img"></div>
+    <!-- Overlay for when the side navigation is open -->
     <div id="sidenav-overlay" class="hidden"></div>
     
-    <!-- Navigation wrapper -->
-    <div>
+    <!-- =================================================================
+    NAVIGATION
+    ================================================================== -->
+    <div class="navigation-container">
 
-        <!-- Topnav -->
+        <!-- Top Navigation Bar -->
         <div class="topnav-wrapper">
-
-          <!-- Top navbar  -->
           <nav class="topnav">
 
-            <!-- Mobile topbar -->
+            <!-- Mobile and Tablet Top Bar -->
             <div class="flex justify-between items-center">
               <!-- Logo -->
-              <a href=""><img class="topnav-logo" src="cat.png" alt="Website logo"></a>
+              <a href=""><img class="topnav-logo" src="cat.png" alt="Monstercat Logo"></a>
 
-              <!-- Socials (top) -->
+              <!-- Social Media Icons (Visible on Small and Medium Screens) -->
               <div class="hidden gap-5.5 sm:flex lg:hidden">
                 <a href=""><img class="social-icon" src="assets/icons/instagram.png" alt="Instagram"></a>
                 <a href=""><img class="social-icon" src="assets/icons/tik-tok.png" alt="Tiktok"></a>
@@ -38,11 +41,11 @@
                 <a href=""><img class="social-icon" src="assets/icons/play-button.png" alt="Monstercat Player"></a>
               </div>
 
-              <!-- hamburger menu -->
-              <button><img id="sidenav-open-btn" class="sidenav-toggle-icon" src="assets/icons/menu.png" alt="Open sidemenu button"></button>
+              <!-- Hamburger Menu Button (Mobile) -->
+              <button id="sidenav-open-btn"><img class="sidenav-toggle-icon" src="assets/icons/menu.png" alt="Open side menu"></button>
             </div>
 
-            <!-- Socials (side) -->
+            <!-- Social Media Icons (Visible on Large Screens - Side) -->
             <div class="hidden flex-col items-end gap-5.5 pr-2 lg:flex">
               <a href=""><img class="social-icon" src="assets/icons/instagram.png" alt="Instagram"></a>
               <a href=""><img class="social-icon" src="assets/icons/tik-tok.png" alt="Tiktok"></a>
@@ -52,36 +55,30 @@
               <a href=""><img class="social-icon" src="assets/icons/discord.png" alt="Discord"></a>
               <a href=""><img class="social-icon" src="assets/icons/play-button.png" alt="Monstercat Player"></a>
             </div>
-
           </nav>
-
         </div>
 
-        <!-- Sidenav -->
+        <!-- Side Navigation (Mobile Menu) -->
         <nav id="sidenav" class="sidenav translate-x-full">
-
-          <!-- Sidenav top -->
+          <!-- Sidenav: Top Section -->
           <div class="flex flex-col gap-16">
-
-            <!-- Logo/Title + close button-->
+            <!-- Sidenav Header: Logo and Close Button -->
             <div class="flex justify-between items-center">
-              <!-- Logo -->
               <a href="" class="flex items-center gap-0.5">
-                <img class="sidenav-logo" src="cat.png" alt="Website logo">
+                <img class="sidenav-logo" src="cat.png" alt="Monstercat Logo">
                 <span class="font-body font-bold tracking-normal text-2xl">monstercat</span>
               </a>
-              <!-- Close button -->
-              <button><img id="sidenav-close-btn" class="sidenav-toggle-icon" src="assets/icons/x.png" alt="Close sidemenu button"></button>
+              <button id="sidenav-close-btn"><img class="sidenav-toggle-icon" src="assets/icons/x.png" alt="Close side menu"></button>
             </div>
 
-            <!-- Nav links -->
+            <!-- Sidenav Navigation Links -->
             <div class="flex flex-col gap-5 ml-2">
-              <a class="nav-link" href="">MUSIC <img src="assets/icons/chevron-right.png" alt=""></a>
+              <a class="nav-link" href="">MUSIC <img src="assets/icons/chevron-right.png" alt="Go to Music"></a>
               <a class="nav-link" href="">ARTISTS</a>
-              <a class="nav-link" href="">ABOUT <img src="assets/icons/chevron-right.png" alt=""></a>
+              <a class="nav-link" href="">ABOUT <img src="assets/icons/chevron-right.png" alt="Go to About"></a>
               <a class="nav-link" href="">NEWS</a>
-              <a class="nav-link" href="">EVENTS <img src="assets/icons/chevron-right.png" alt=""></a>
-              <a class="nav-link" href="">PROGRAMMING <img src="assets/icons/chevron-right.png" alt=""></a>
+              <a class="nav-link" href="">EVENTS <img src="assets/icons/chevron-right.png" alt="Go to Events"></a>
+              <a class="nav-link" href="">PROGRAMMING <img src="assets/icons/chevron-right.png" alt="Go to Programming"></a>
               <a class="nav-link" href="">GOLD</a>
               <a class="nav-link" href="">PARTNERS</a>
               <a class="nav-link" href="">PRESS</a>
@@ -89,13 +86,11 @@
               <a class="nav-link" href="">SHOP</a>
               <a class="nav-link" href="">LOST CIVILIZATION</a>
             </div>
-
           </div>
 
-          <!-- Sidenav bottom -->
+          <!-- Sidenav: Bottom Section -->
           <div class="flex flex-col gap-8.5 ml-2">
-
-            <!-- Socials -->
+            <!-- Sidenav Social Icons -->
             <div class="flex gap-5 ml-1">
               <a href=""><img class="social-icon" src="assets/icons/instagram.png" alt="Instagram"></a>
               <a href=""><img class="social-icon" src="assets/icons/tik-tok.png" alt="Tiktok"></a>
@@ -106,137 +101,110 @@
               <a href=""><img class="social-icon" src="assets/icons/play-button.png" alt="Monstercat Player"></a>
             </div>
 
-            <!-- Sign in/up -->
+            <!-- Sign In / Sign Up Links -->
             <div class="flex items-center gap-4">
               <a class="button px-4.5! py-1! hover:text-background! hover:bg-primary!" href="">SIGN IN</a>
               <a href="">OR SIGN UP</a>
             </div>
-
           </div>
-
         </nav>
-
     </div>
 
-    <!-- Main wrapper for ALL content -->
-    <div class="main-wrapper">
+    <!-- =================================================================
+    MAIN CONTENT
+    ================================================================== -->
+    <main class="main-wrapper">
 
-      <!-- Album image, title, etc -->
+      <!-- Header Section: Album Art and Details -->
       <header>
-
         <div class="album-cover-wrapper">
-
-          <!-- Album image -->
-          <img class="album-img" src="salvatore-andrea-santacroce-Nc0xNgW3G-k-unsplash.jpg" alt="Album cover">
-
+          <img class="album-img" src="salvatore-andrea-santacroce-Nc0xNgW3G-k-unsplash.jpg" alt="Album Cover for APEX PROTOCOL by AURORA BOREALIS">
           <span class="rotating-text">
             <span class="font-semibold text-accent">Uncaged</span> — Released October 20, 2025
           </span>          
-                
         </div>
 
-        <!-- Album details -->
+        <!-- Album Details -->
         <div class="flex flex-col gap-7 md:gap-14 md:mt-6">
-
-          <!-- Album title(?) + Artist -->
           <div class="flex flex-col gap-1 md:gap-3">
-            <h2>APEX PROTOCOL</h1>
-            <h3>AURORA BOREALIS</h2>
+            <h1>APEX PROTOCOL</h1>
+            <h2>AURORA BOREALIS</h2>
           </div>
 
-          <!-- Listen + Share buttons -->
+          <!-- Action Buttons: Listen and Share -->
           <div class="flex items-center gap-2">
-            <!-- Listen -->
             <button class="button group flex items-center gap-1 bg-accent border-accent">
-              <div>
-                <img class="w-5 group-hover:hidden" src="assets/icons/play.png" alt="Play album button">
-                <img class="w-5 hidden group-hover:block" src="assets/icons/play-black.png" alt="Play album button hover">
-              </div>
-
+              <img class="w-5 group-hover:hidden" src="assets/icons/play.png" alt="Play album">
+              <img class="w-5 hidden group-hover:block" src="assets/icons/play-black.png" alt="Play album hover">
               <span>LISTEN NOW</span>
             </button>
-
-            <!-- Share -->
             <button class="button group flex items-center gap-2">
-              <div>
-                <img class="w-5 group-hover:hidden" src="assets/icons/share.png" alt="Share album button">
-                <img class="w-5 hidden group-hover:block" src="assets/icons/share-black.png" alt="Share album button hover">
-              </div>
-
+              <img class="w-5 group-hover:hidden" src="assets/icons/share.png" alt="Share album">
+              <img class="w-5 hidden group-hover:block" src="assets/icons/share-black.png" alt="Share album hover">
               <span>SHARE</span>
             </button>
           </div>
-
         </div>
-
       </header>
 
-      <!-- Wrapper for Stream, Tracklist, and Music Video -->
+      <!-- Main Content Sections: Stream, Tracklist, Music Video -->
       <div class="flex flex-col gap-10 w-full xl:gap-20">
 
-        <!-- Stream it... -->
-        <section  class="stream-wrapper">
-          <h1>STREAM IT YOUR WAY</h1>
-
-          <!-- Platform icons -->
+        <!-- Stream Section -->
+        <section class="stream-wrapper">
+          <h3>STREAM IT YOUR WAY</h3>
           <div class="flex items-center">
-            <!-- Add "relative" to each button -->
             <a class="bordered-button group relative flex items-center gap-2 py-3.1! border-l-2">
-              <img class="social-icon" src="assets/icons/play-button.png" alt="Stream it on Monstercat player">
+              <img class="social-icon" src="assets/icons/play-button.png" alt="Monstercat player">
               <span class="text-xs">PLAYER</span>
               <div class="tooltip group-hover:opacity-100">STREAM ON MONSTERCAT PLAYER</div>
             </a>
             <a class="bordered-button group relative">
-              <img class="social-icon" src="assets/icons/bandcamp.png" alt="Stream it on Bandcamp">
+              <img class="social-icon" src="assets/icons/bandcamp.png" alt="Bandcamp">
               <div class="tooltip">STREAM ON BANDCAMP</div>
             </a>
             <a class="bordered-button group relative">
-              <img class="social-icon" src="assets/icons/soundcloud.png" alt="Stream it on Soundcloud">
+              <img class="social-icon" src="assets/icons/soundcloud.png" alt="Soundcloud">
               <div class="tooltip group-hover:opacity-100">STREAM ON SOUNDCLOUD</div>
             </a>
             <a class="bordered-button group relative">
-              <img class="social-icon" src="assets/icons/apple.png" alt="Stream it on Apple Music">
+              <img class="social-icon" src="assets/icons/apple.png" alt="Apple Music">
               <div class="tooltip group-hover:opacity-100">STREAM ON APPLE</div>
             </a>
             <a class="bordered-button group relative">
-              <img class="social-icon" src="assets/icons/youtube.png" alt="Stream it on Youtube">
+              <img class="social-icon" src="assets/icons/youtube.png" alt="Youtube">
               <div class="tooltip group-hover:opacity-100">STREAM ON YOUTUBE</div>
             </a>
             <a class="bordered-button group relative">
-              <img class="social-icon" src="assets/icons/spotify.png" alt="Stream it on Spotify">
+              <img class="social-icon" src="assets/icons/spotify.png" alt="Spotify">
               <div class="tooltip group-hover:opacity-100">STREAM ON SPOTIFY</div>
             </a>
           </div>
-
         </section>
 
-        <!-- Track list -->
-        <section  class="tracklist-wrapper">
-          <h1>TRACK LIST</h1>
-
-          <!-- List of tracks -->
+        <!-- Tracklist Section -->
+        <section class="tracklist-wrapper">
+          <h3>TRACK LIST</h3>
+          <!-- Container for dynamically generated tracklist -->
           <div id="tracklist-container" class="list-o-tracks-wrapper">
-
-            <!-- Populate with tracks -->
-
+            <!-- Tracks will be populated by main.js -->
           </div>
         </section>
 
-        <!-- Music video -->
-        <section  class="video-wrapper">
-          <h1>MUSIC VIDEO</h1>
-          <iframe src="https://www.youtube.com/embed/K4DyBUG242c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>    
+        <!-- Music Video Section -->
+        <section class="video-wrapper">
+          <h3>MUSIC VIDEO</h3>
+          <iframe src="https://www.youtube.com/embed/K4DyBUG242c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
         </section>
-
       </div>
 
-      <!-- Footer -->
+      <!-- =================================================================
+      FOOTER
+      ================================================================== -->
       <footer>
-
-        <!-- Links + Newsletter -->
+        <!-- Footer Links and Newsletter -->
         <section class="footer-main-wrapper">
-
-          <!-- Footer site links -->
+          <!-- Footer Navigation Links -->
           <div class="flex flex-col">
             <a href="">ABOUT MONSTERCAT</a>
             <a href="">CONTACT US</a>
@@ -244,58 +212,53 @@
             <a href="">NEWS</a>
             <a href="">PRESS</a>
           </div>
-          <!-- ToS + Privacy Policy -->
+          <!-- Legal Links -->
           <div class="flex flex-col">
             <a href="">TERMS OF SERVICE</a>
             <a href="">PRIVACY POLICY</a>
           </div>
-
-          <!-- Newsletter -->
+          <!-- Newsletter Signup -->
           <div class="newsletter-wrapper">
             <div class="flex flex-col gap-3">
               <h4>MONSTERCAT NEWS</h4>
               <p>Don't miss a thing, stay up to date with the latest news from us.</p>          
             </div>
-            <!-- Email form -->
             <form class="flex pb-2 border-b-1">
               <input type="text" placeholder="Enter email">
-              <button class="button group px-7! border-0!">
-                <div>
-                  <img class="w-4 group-hover:hidden" src="assets/icons/right-arrow.png" alt="Submit email to Newsletter button">
-                  <img class="w-4 hidden group-hover:block" src="assets/icons/right-arrow-black.png" alt="Submit email to Newsletter button hover">
-                </div>
+              <button type="submit" class="button group px-7! border-0!">
+                <img class="w-4 group-hover:hidden" src="assets/icons/right-arrow.png" alt="Submit email">
+                <img class="w-4 hidden group-hover:block" src="assets/icons/right-arrow-black.png" alt="Submit email hover">
               </button>
             </form>
           </div>
-
         </section>
 
-        <!-- Copyright + Socials -->
+        <!-- Copyright and Social Media -->
         <section class="footer-copy-socials">
           <span class="font-body italic text-sm">2011 - 2025 © frantan, All Rights Reserved</span>
           <div class="flex items-center gap-5">
-            <a href=""><img class="social-icon" src="assets/icons/youtube.png" alt="Monstercat on Youtube"></a>
-            <a href=""><img class="social-icon" src="assets/icons/instagram.png" alt="Monstercat on Instagram"></a>
-            <a href=""><img class="social-icon" src="assets/icons/tik-tok.png" alt="Monstercat on Tiktok"></a>
-            <a href=""><img class="social-icon" src="assets/icons/twitter.png" alt="Monstercat on Twitter"></a>
-            <a href=""><img class="social-icon" src="assets/icons/spotify.png" alt="Monstercat on Spotify"></a>
-            <a href=""><img class="social-icon" src="assets/icons/apple.png" alt="Monstercat on Apple Music"></a>
-            <a href=""><img class="social-icon" src="assets/icons/twitch.png" alt="Monstercat on Twitch"></a>
-            <a href=""><img class="social-icon" src="assets/icons/facebook.png" alt="Monstercat on Facebook"></a>
-            <a href=""><img class="social-icon" src="assets/icons/discord.png" alt="Monstercat on Discord"></a>
+            <a href=""><img class="social-icon" src="assets/icons/youtube.png" alt="Youtube"></a>
+            <a href=""><img class="social-icon" src="assets/icons/instagram.png" alt="Instagram"></a>
+            <a href=""><img class="social-icon" src="assets/icons/tik-tok.png" alt="Tiktok"></a>
+            <a href=""><img class="social-icon" src="assets/icons/twitter.png" alt="Twitter"></a>
+            <a href=""><img class="social-icon" src="assets/icons/spotify.png" alt="Spotify"></a>
+            <a href=""><img class="social-icon" src="assets/icons/apple.png" alt="Apple Music"></a>
+            <a href=""><img class="social-icon" src="assets/icons/twitch.png" alt="Twitch"></a>
+            <a href=""><img class="social-icon" src="assets/icons/facebook.png" alt="Facebook"></a>
+            <a href=""><img class="social-icon" src="assets/icons/discord.png" alt="Discord"></a>
             <a href=""><img class="social-icon" src="assets/icons/play-button.png" alt="Monstercat Player"></a>
           </div>
         </section>
 
         <!-- Acknowledgements -->
         <section class="acknowledgements">
-          This is a frontend recreation for portfolio/educational use only. Placeholder music is provided by NoCopyrightSounds (NCS). Full music credits and licensing details can be found in the project's README.md file.
+          <p>This is a frontend recreation for portfolio/educational use only. Placeholder music is provided by NoCopyrightSounds (NCS). Full music credits and licensing details can be found in the project's README.md file.</p>
         </section>
-
       </footer>
 
-    </div>
+    </main>
 
+    <!-- Audio player element, controlled by JavaScript -->
     <audio id="audio-player"></audio>
 
     <script type="module" src="/src/main.js"></script>

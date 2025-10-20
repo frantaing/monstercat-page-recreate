@@ -1,117 +1,123 @@
 import './style.css'
+import { album } from './albumData'; // Imports the album track data
 
-// Import the tracklist album data
-import { album } from './albumData';
+// =================================================================
+// # SIDENAV (MOBILE MENU) TOGGLE LOGIC
+// =================================================================
 
-// ===========================
-// # Toggle sidenav menu logic
-// ===========================
+// Get necessary DOM elements for the sidenav
 const sidenavOpenBtn = document.getElementById('sidenav-open-btn');
 const sidenavCloseBtn = document.getElementById('sidenav-close-btn');
 const sidenav = document.getElementById('sidenav');
 const overlay = document.getElementById('sidenav-overlay');
 
-function openSidenav() { sidenav.classList.remove('translate-x-full'); overlay.classList.remove('hidden') }
-function closeSidenav() { sidenav.classList.add('translate-x-full'); overlay.classList.add('hidden') }
+/**
+ * Opens the side navigation menu and shows the overlay.
+ */
+function openSidenav() {
+    sidenav.classList.remove('translate-x-full'); // Slides the menu in
+    overlay.classList.remove('hidden'); // Fades in the overlay
+}
 
+/**
+ * Closes the side navigation menu and hides the overlay.
+ */
+function closeSidenav() {
+    sidenav.classList.add('translate-x-full'); // Slides the menu out
+    overlay.classList.add('hidden'); // Hides the overlay
+}
+
+// Attach event listeners to the buttons and overlay
 sidenavOpenBtn.addEventListener('click', openSidenav);
 sidenavCloseBtn.addEventListener('click', closeSidenav);
-overlay.addEventListener('click', closeSidenav);
+overlay.addEventListener('click', closeSidenav); // Also close when clicking outside the menu
 
 
-// ===========================
-// # Tracklist & music player logic
-// ===========================
+// =================================================================
+// # TRACKLIST & MUSIC PLAYER LOGIC
+// =================================================================
+
+// Wait for the DOM to be fully loaded before running the script
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Get elements
-    // tracklistContainer for populating the tracklist
+    // Get DOM elements for the tracklist and audio player
     const tracklistContainer = document.getElementById('tracklist-container');
-    // audioPlayer for playing audio
     const audioPlayer = document.getElementById('audio-player');
 
-    // State management variable
-    // Keep track which .track-item is currently playing
+    // State variable to keep track of the currently playing track's DOM element
     let currentTrackElement = null;
 
-    // If containers doensn't exist, HALT
+    // Halt execution if essential elements are not found
     if (!tracklistContainer || !audioPlayer) {
-        console.error("Tracklist container and audio player not found!");
+        console.error("Required elements (tracklist container or audio player) not found!");
         return;
     }
     
-    // Populate the tracklist
-    // Loop thru each track in the album data
+    // --- Populate the Tracklist from albumData.js ---
     album.tracks.forEach((track, index) => {    
-        // For each track, create the HTML template
+        // Create an HTML string for each track
         const trackHTML = `
             <div class="track-item" data-track-path="${track.filePath}">
-                <!-- Right side -->
+                <!-- Left side of the track item -->
                 <div class="flex items-center">
-                <!-- Track # -->
-                <span class="track-num">${index + 1}</span>
-                <!-- Play icon -->
-                <button class="play-btn"><img class="w-8 mr-5 cursor-pointer" src="assets/icons/play.png" alt="Play track button"></button>
-                <!-- Track title + Artist -->
-                <div class="flex flex-col">
-                    <span class="track-title">${track.title}</span>
-                    <span class="track-artist">${track.artist}</span>
-                </div>
+                    <span class="track-num">${index + 1}</span>
+                    <button class="play-btn">
+                        <img class="w-8 mr-5 cursor-pointer" src="assets/icons/play.png" alt="Play ${track.title}">
+                    </button>
+                    <div class="flex flex-col">
+                        <span class="track-title">${track.title}</span>
+                        <span class="track-artist">${track.artist}</span>
+                    </div>
                 </div>
 
-                <!-- Left side -->
+                <!-- Right side of the track item -->
                 <div class="duration-share">
-                <!-- Track duration -->
-                <span class="track-duration">${track.duration}</span>
-                <!-- Share icon -->
-                <button><img class="w-6 cursor-pointer" src="assets/icons/share.png" alt="Share track button"></button>              
+                    <span class="track-duration">${track.duration}</span>
+                    <button>
+                        <img class="w-6 cursor-pointer" src="assets/icons/share.png" alt="Share ${track.title}">
+                    </button>              
                 </div>
             </div>
         `;
-        // Insert the newly created HTML into the tracklist container
+        // Insert the new track HTML into the container
         tracklistContainer.insertAdjacentHTML('beforeend', trackHTML);
     });
 
-    // For music player
+    // --- Music Player Event Handling ---
+    // Use event delegation on the container to handle clicks on play buttons
     tracklistContainer.addEventListener('click', event => {
-        // Find the closest .play-btn that was clicked on
         const playButton = event.target.closest('.play-btn');
 
         // If the click was not on a play button, do nothing
-        if (!playButton) { return; }
+        if (!playButton) return;
 
-        // Find the parent .track-item of the clicked play butotn
         const trackElement = playButton.closest('.track-item');
         const trackPath = trackElement.dataset.trackPath;
 
-        // [1] If a new song is clicked (or the first song is clicked)
+        // CASE 1: A new/different track is clicked
         if (trackElement !== currentTrackElement) {
-            // If another songn is playing, reset the icon to the play button
+            // If another track is already playing, reset its icon to 'play'
             if (currentTrackElement) {
                 const oldPlayBtnImg = currentTrackElement.querySelector('.play-btn img');
                 oldPlayBtnImg.src = 'assets/icons/play.png';
             }
 
-            // Update the current track
+            // Update the state to the new track
             currentTrackElement = trackElement;
 
-            // Set the audio source and play the new track
+            // Set the audio player's source to the new track's file path and play it
             audioPlayer.src = `${import.meta.env.BASE_URL}${trackPath}`;
             audioPlayer.play();
 
-            // Update the new track's icon to 'pause'
+            // Change the clicked button's icon to 'pause'
             playButton.querySelector('img').src = 'assets/icons/pause.png';
         }
-
-        // [2] If the currently playing song's button is clicked again
+        // CASE 2: The currently playing track's button is clicked again (toggle play/pause)
         else {
             if (audioPlayer.paused) {
-                // If it's paused, play it and change the icon to 'pause'
                 audioPlayer.play();
                 playButton.querySelector('img').src = 'assets/icons/pause.png';
-            }
-            else {
-                // If it's playing, pause and change the icon to 'play'
+            } else {
                 audioPlayer.pause();
                 playButton.querySelector('img').src = 'assets/icons/play.png';
             }

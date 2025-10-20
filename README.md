@@ -79,7 +79,7 @@ This is a **WIP**! 🤫
 - [x] Working music player?
 
 #### Final stuff ✨
-- [ ] Final code cleanup and commenting
+- [x] Final code cleanup and commenting
 - [x] Deploy the site to Github Pages
 - [x] Add the live site link to the top of the README
 
