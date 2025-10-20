@@ -4,9 +4,9 @@
 ======================
 */
 
-/* Tailwind import */
+/* Imports Tailwind's base, components, and utilities */
 @import 'tailwindcss';
-/* Font import (Montserrat & Special Gothic Expanded One) */
+/* Imports Google Fonts: Montserrat for body text and Special Gothic Expanded One for headings */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
 
 
@@ -16,15 +16,17 @@
 ======================
 */
 @theme {
-    /* Typography */
+    /* Defines the primary fonts used throughout the site */
     --font-heading: "Special Gothic Expanded One", sans-serif;          /* For headings (Album name, buttons, Stream/Track, etc) */
     --font-body: "Montserrat", sans-serif;                              /* For general body font */
-    /* Colors */
+    
+    /* Defines the color palette */
     --color-accent: #50A584;                                            /* [Green] accent color for buttons */
     --color-primary: #fdfdfd;                                           /* [White-ish] for text and icons */
     --color-secondary: #898888;                                         /* [Grey] for News (?) */
-    --color-background: #0E0B0C;                                           /* [Black] for background */
+    --color-background: #0E0B0C;                                        /* [Black] for background */
 
+    /* Defines custom responsive breakpoints for Tailwind */
     --breakpoint-sm: 33rem;
     --breakpoint-md: 48rem;
     --breakpoint-ml: 62rem;
@@ -40,7 +42,7 @@
 ======================
 */
 
-/* Base */
+/* Base styles for the entire page */
 body {
     @apply
         overflow-x-hidden
@@ -51,8 +53,10 @@ body {
         bg-background
 }
 
-/* Wrappers */
-.main-wrapper { /* For whole site */
+/* --- Major Layout Wrappers --- */
+
+/* Main content wrapper for the entire site below the navigation */
+.main-wrapper { 
     @apply
         relative z-10
         flex flex-col items-center gap-5
@@ -64,10 +68,12 @@ body {
         xl:w-[72rem] xl:mr-5
         2xl:w-[92rem]
 }
-.topnav-wrapper { /* For topbar navigation */
+/* Wrapper for the top navigation bar to center it */
+.topnav-wrapper { 
     @apply
         flex justify-center
 }
+/* Header section containing the album cover and details */
 header {
     @apply
         flex flex-col items-start gap-7
@@ -76,6 +82,7 @@ header {
         ml:flex-row ml:items-center ml:gap-12 ml:w-full
         xl:gap-18
 }
+/* Wrapper for the album cover image and the rotating text */
 .album-cover-wrapper {
     @apply
         relative 
@@ -83,6 +90,7 @@ header {
         
         md:flex-row md:items-end md:pl-1 md:ml-5.5
 }
+/* Wrapper for the "Stream It Your Way" section */
 .stream-wrapper {
     @apply
         flex flex-col items-start gap-4 
@@ -90,6 +98,7 @@ header {
         
         md:gap-10 ml:mt-20
 }
+/* Wrapper for the "Track List" section */
 .tracklist-wrapper {
     @apply
         flex flex-col gap-7 
@@ -97,6 +106,7 @@ header {
         md:gap-11 
         xl:gap-12
 }
+/* Container that holds the dynamically generated list of tracks */
 .list-o-tracks-wrapper {
     @apply
         flex flex-col gap-6 
@@ -106,15 +116,18 @@ header {
         md:mr-0 md:ml-2 
         xl:mr-8
 }
+/* Wrapper for the "Music Video" section */
 .video-wrapper {
     @apply
         flex flex-col gap-5
 }
+/* Main footer container */
 footer {
     @apply
         flex flex-col gap-10
         mt-16
 }
+/* Wrapper for the main footer content (links and newsletter) */
 .footer-main-wrapper {
     @apply
     flex flex-col
@@ -125,27 +138,33 @@ footer {
     md:grid md:grid-cols-3 md:justify-items-start md:text-xl
 }
 
-/* Images & Icons */
-.topnav-logo { /* Logo for topbar */
+/* --- Images & Icons --- */
+
+/* Logo in the top navigation bar */
+.topnav-logo {
     @apply
         w-9 p-1.5 
         bg-background 
         
         sm:w-12 sm:p-1.5
 }
-.sidenav-logo { /* Logo for sidenav */
+/* Logo in the side navigation menu */
+.sidenav-logo {
     @apply
         w-11
 }
-.social-icon { /* Social icons for navigation */
+/* Base style for all social media icons */
+.social-icon { 
     @apply
         w-4.5
 }
-.sidenav-toggle-icon { /* Sidemenu close button icon */
+/* Hamburger and 'X' icons for toggling the side navigation */
+.sidenav-toggle-icon {
     @apply
         w-9
         cursor-pointer
 }
+/* Blurred background image positioned at the top of the page */
 .background-img {
     @apply
         absolute top-0 left-0 right-0
@@ -154,6 +173,7 @@ footer {
         blur opacity-40 scale-x-105
         bg-[linear-gradient(to_bottom,transparent_50%,theme(colors.background)),url(/salvatore-andrea-santacroce-Nc0xNgW3G-k-unsplash.jpg)]
 }
+/* The main album cover image */
 .album-img {
     @apply
         order-1 
@@ -164,6 +184,7 @@ footer {
         xl:w-[30rem]
         2xl:w-[40.5rem]
 }
+/* Styles for the embedded YouTube video iframe */
 iframe {
     @apply
         w-full h-70 
@@ -175,8 +196,10 @@ iframe {
         2xl:h-[52rem]
 }
 
-/* Text */
-h1 { /* For headings "STREAM IT YOUR WAY", "TRACK LIST", and "MUSIC VIDEO" */
+/* --- Typography --- */
+
+/* Style for primary section headings ("STREAM IT...", "TRACK LIST", etc.) */
+h1 {
     @apply
         text-xl 
         
@@ -184,28 +207,33 @@ h1 { /* For headings "STREAM IT YOUR WAY", "TRACK LIST", and "MUSIC VIDEO" */
         md:text-4xl 
         xl:text-5xl
 }
-h2 { /* Album title */
+/* Style for the main album title */
+h2 {
     @apply
         text-2xl 
         
         md:text-4xl md:text-transparent md:[-webkit-text-stroke:1px_white] 
         xl:text-5xl
 }
-h3 { /* Artist */
+/* Style for the artist's name */
+h3 {
     @apply
         sm:text-xl
         md:text-2xl
 }
+/* Base style for paragraph text */
 p {
     @apply
         font-body italic text-sm
 }
+/* Style for form input fields */
 input {
     @apply
         w-full 
         text-xl font-body font-medium 
         focus:outline-0
 }
+/* Vertically oriented text next to the album art on larger screens */
 .rotating-text {
     @apply
         order-2 
@@ -214,11 +242,11 @@ input {
         sm:text-lg
         md:absolute md:bottom-0 md:left-0 md:order-1 md:whitespace-nowrap md:origin-bottom-left md:-rotate-90
 }
+/* Styles for text elements within the tracklist */
 .track-num {
     @apply
         w-9
         font-normal text-lg
-        
 }
 .track-title {
     @apply
@@ -233,13 +261,16 @@ input {
     @apply
     font-normal text-lg
 }
+/* Informational text at the very bottom of the footer */
 .acknowledgements {
     @apply
         mt-5 mb-20 
         font-body italic text-center text-xs
 }
 
-/* Tooltips */
+/* --- Tooltips --- */
+
+/* Base tooltip style, hidden by default */
 .tooltip {
     @apply
     absolute z-10
@@ -249,6 +280,7 @@ input {
     bottom-full left-1/2 -translate-x-1/2 
     invisible opacity-0 transition-opacity;
 }
+/* Creates the small triangle arrow below the tooltip */
 .tooltip::after {
     @apply
         absolute;
@@ -261,21 +293,26 @@ input {
         border-style: solid;
         border-color: theme('colors.primary') transparent transparent transparent;
 }
+/* Makes the tooltip visible when hovering over its parent element (with the 'group' class) */
 .group:hover .tooltip {
     @apply 
     visible opacity-100;
 }
 
-/* Links and buttons */
-.nav-link { /* Navigation link */
+/* --- Links and Buttons --- */
+
+/* Links within the side navigation menu */
+.nav-link { 
     @apply
         flex items-center gap-2.5
         text-[17px]
 }
-.nav-link img { /* Nav-link sub-menu arrow */
+/* Chevron icon within the side navigation links */
+.nav-link img {
     @apply
         w-4.5
 }
+/* General button styling */
 .button {
     @apply
         pr-7 pl-5 py-2.5
@@ -286,6 +323,7 @@ input {
 
         md:pr-9 md:pl-7 md:py-3.5 md:text-base
 }
+/* Buttons for the streaming platforms, with borders between them */
 .bordered-button {
     @apply
         p-3
@@ -295,8 +333,10 @@ input {
         md:p-6.5
 }
 
-/* Navigation */
-.topnav { /* Mobile top bar navigation */
+/* --- Navigation Specifics --- */
+
+/* The main top navigation bar */
+.topnav {
     @apply
         fixed z-50
         flex flex-col gap-11.5
@@ -308,7 +348,8 @@ input {
         xl:max-w-[91rem]
         2xl:max-w-[116rem]
 }
-.sidenav { /* Hidden side menu */
+/* The slide-out side navigation menu for mobile */
+.sidenav {
     @apply
         fixed z-100 top-0 right-0
         flex flex-col justify-between self-end
@@ -316,16 +357,20 @@ input {
         bg-background
         transform transition-transform duration-300 ease-in-out
 }
+/* Full-screen overlay shown behind the side navigation when it's open */
 #sidenav-overlay {
     @apply
         fixed inset-0 z-[99]
 }
 
-/* Tracklist section stuff */
+/* --- Tracklist Section Specifics --- */
+
+/* A single track item row in the tracklist */
 .track-item {
     @apply
         flex justify-between items-center
 }
+/* Wrapper for the track duration and share button on the right side of a track item */
 .duration-share {
     @apply
         flex items-center gap-2 
@@ -335,7 +380,9 @@ input {
         2xl:gap-18
 }
 
-/* Footer */
+/* --- Footer Specifics --- */
+
+/* Wrapper for the newsletter signup form in the footer */
 .newsletter-wrapper {
     @apply
         flex flex-col gap-10 
@@ -344,6 +391,7 @@ input {
         
         md:mt-0
 }
+/* Wrapper for the copyright text and social media icons in the footer */
 .footer-copy-socials {
     @apply
         flex flex-col gap-5 
