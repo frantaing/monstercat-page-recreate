@@ -79,9 +79,9 @@ This is a **WIP**! 🤫
 - [x] Working music player?
 
 #### Final stuff ✨
-- [ ] Final code cleanup and commenting
-- [ ] Deploy the site to Github Pages
-- [ ] Add the live site link to the top of the README
+- [x] Final code cleanup and commenting
+- [x] Deploy the site to Github Pages
+- [x] Add the live site link to the top of the README
 
 <br>
 
